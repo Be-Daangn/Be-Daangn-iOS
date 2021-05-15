@@ -22,6 +22,7 @@
 		BD5B3544264FAD5A006BA829 /* SecretKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5B3543264FAD5A006BA829 /* SecretKey.swift */; };
 		BD5B3546264FADB3006BA829 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5B3545264FADB3006BA829 /* Device.swift */; };
 		BD5B3548264FADD0006BA829 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5B3547264FADD0006BA829 /* UIButton.swift */; };
+		BDFF52E4264FBAF6000DDF06 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFF52E3264FBAF6000DDF06 /* UIColor.swift */; };
 		C2A377F078F1AD1ACEECA7CB /* Pods_Be_Daangn_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED258F12B4158B8FC8AB8A19 /* Pods_Be_Daangn_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		BD5B3543264FAD5A006BA829 /* SecretKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretKey.swift; sourceTree = "<group>"; };
 		BD5B3545264FADB3006BA829 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		BD5B3547264FADD0006BA829 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		BDFF52E3264FBAF6000DDF06 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		CD6E2E9526E32D324FD196CD /* Pods-Be-Daangn-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Be-Daangn-iOS.release.xcconfig"; path = "Target Support Files/Pods-Be-Daangn-iOS/Pods-Be-Daangn-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		ED258F12B4158B8FC8AB8A19 /* Pods_Be_Daangn_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Be_Daangn_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				BD5B3547264FADD0006BA829 /* UIButton.swift */,
+				BDFF52E3264FBAF6000DDF06 /* UIColor.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				BD5B3538264FA890006BA829 /* BaseViewController.swift in Sources */,
 				BD5B3548264FADD0006BA829 /* UIButton.swift in Sources */,
 				BD5B353E264FA95C006BA829 /* NewsViewController.swift in Sources */,
+				BDFF52E4264FBAF6000DDF06 /* UIColor.swift in Sources */,
 				BD5B3542264FACD5006BA829 /* Constants.swift in Sources */,
 				BD5B353A264FA935006BA829 /* HomeViewController.swift in Sources */,
 				BD5B353C264FA942006BA829 /* RecommendViewController.swift in Sources */,
