@@ -8,6 +8,5 @@
 import UIKit
 
 struct SecretKey {
-    
     static let JWT_TOKEN = UserDefaults.standard.string(forKey: "jwt")
 }
