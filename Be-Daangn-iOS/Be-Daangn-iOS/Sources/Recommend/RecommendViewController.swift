@@ -41,12 +41,12 @@ class RecommendViewController: BaseViewController {
 }
 
 // MARK: - Custom Function Part
-/// IBAction 제외한 함수들의 세팅은 여기서 하도록 함
+// IBAction 제외한 함수들의 세팅은 여기서 하도록 함
 extension RecommendViewController {
     private func configureUI() {
         setupCollectionView()
         
-        /// Font
+        // Font
         TitleLabel.font = UIFont.NotoSans(.extraBold, size: 27)
         for button in TagButtonCollection {
             button.titleLabel?.font = UIFont.NotoSans(.extraBold, size: 13)
@@ -56,6 +56,17 @@ extension RecommendViewController {
     private func setupCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        
+        /*
+         [Corner Radius : left-top, right-top에만 적용]
+         layerMaxXMaxYCorner – lower right corner
+         layerMaxXMinYCorner – top right corner
+         layerMinXMaxYCorner – lower left corner
+         layerMinXMinYCorner – top left corner
+         */
+        collectionView.layer.cornerRadius = 40
+        collectionView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
     }
 }
 
