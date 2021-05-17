@@ -189,15 +189,57 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Taw-a3-XnR">
+                                <rect key="frame" x="0.0" y="609" width="375" height="58"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fk-1a-vW4">
+                                        <rect key="frame" x="44" y="0.0" width="23" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="3Yh-Db-wus"/>
+                                            <constraint firstAttribute="width" constant="23" id="LR1-gj-rxp"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="recommendBottombarIcon1"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQG-DW-zhD">
+                                        <rect key="frame" x="176" y="0.0" width="23" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="23" id="TJr-Hu-nQV"/>
+                                            <constraint firstAttribute="height" constant="23" id="t1h-3e-Ezy"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="recommendBottombarIcon2"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LuV-A8-X2S">
+                                        <rect key="frame" x="310" y="2" width="21" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="21" id="Cd2-pD-nwW"/>
+                                            <constraint firstAttribute="height" constant="21" id="rEt-h8-aeF"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="recommendBottombarIcon3"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="4fk-1a-vW4" firstAttribute="leading" secondItem="Taw-a3-XnR" secondAttribute="leading" constant="44" id="Nyf-5u-xOb"/>
+                                    <constraint firstAttribute="trailing" secondItem="LuV-A8-X2S" secondAttribute="trailing" constant="44" id="OYd-nh-9yo"/>
+                                    <constraint firstItem="4fk-1a-vW4" firstAttribute="top" secondItem="Taw-a3-XnR" secondAttribute="top" id="OgA-H4-vB1"/>
+                                    <constraint firstItem="LuV-A8-X2S" firstAttribute="top" secondItem="Taw-a3-XnR" secondAttribute="top" constant="2" id="X4J-Du-pbC"/>
+                                    <constraint firstItem="sQG-DW-zhD" firstAttribute="top" secondItem="Taw-a3-XnR" secondAttribute="top" id="YMi-MX-e7S"/>
+                                    <constraint firstAttribute="height" constant="58" id="uEw-MU-Ufs"/>
+                                    <constraint firstItem="sQG-DW-zhD" firstAttribute="centerX" secondItem="Taw-a3-XnR" secondAttribute="centerX" id="ygo-Va-1Li"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" red="1" green="0.6705882352941176" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dvU-pK-h5t" secondAttribute="trailing" constant="37" id="2Co-z3-DQN"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Taw-a3-XnR" secondAttribute="trailing" id="2Sv-gl-LD9"/>
                             <constraint firstItem="F85-gh-SDg" firstAttribute="top" secondItem="84D-0t-3yv" secondAttribute="bottom" constant="53" id="8lS-L8-Pa9"/>
                             <constraint firstItem="bOt-5c-xI2" firstAttribute="top" secondItem="rfH-7Q-bJg" secondAttribute="bottom" constant="23" id="Adr-nX-yCl"/>
+                            <constraint firstItem="Taw-a3-XnR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="BxD-vE-DGz"/>
                             <constraint firstItem="rfH-7Q-bJg" firstAttribute="top" secondItem="keR-KD-uL2" secondAttribute="bottom" constant="28" id="GOm-G5-b5p"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="F85-gh-SDg" secondAttribute="trailing" id="LFF-eY-sUX"/>
+                            <constraint firstAttribute="bottom" secondItem="Taw-a3-XnR" secondAttribute="bottom" id="UC9-jk-7gY"/>
                             <constraint firstItem="dvU-pK-h5t" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="55" id="aXf-Wp-0gp"/>
                             <constraint firstItem="84D-0t-3yv" firstAttribute="top" secondItem="bOt-5c-xI2" secondAttribute="bottom" constant="13" id="bOm-pb-yDk"/>
                             <constraint firstItem="F85-gh-SDg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="eXF-fv-yVC"/>
@@ -224,13 +266,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="129" y="121"/>
+            <point key="canvasLocation" x="128.80000000000001" y="120.98950524737631"/>
         </scene>
     </scenes>
     <resources>
         <image name="navi_back_btn" width="24" height="24"/>
         <image name="navi_bookmark_btn" width="21" height="21"/>
         <image name="navi_write_btn" width="21" height="21"/>
+        <image name="recommendBottombarIcon1" width="23" height="23"/>
+        <image name="recommendBottombarIcon2" width="23" height="23"/>
+        <image name="recommendBottombarIcon3" width="21" height="21"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
