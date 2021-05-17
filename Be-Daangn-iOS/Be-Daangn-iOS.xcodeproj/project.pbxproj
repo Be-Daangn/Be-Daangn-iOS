@@ -22,6 +22,9 @@
 		BD5B3544264FAD5A006BA829 /* SecretKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5B3543264FAD5A006BA829 /* SecretKey.swift */; };
 		BD5B3546264FADB3006BA829 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5B3545264FADB3006BA829 /* Device.swift */; };
 		BD5B3548264FADD0006BA829 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5B3547264FADD0006BA829 /* UIButton.swift */; };
+		BD9F52A326522E23008E766E /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD9F52A126522E23008E766E /* NotoSans-Bold.ttf */; };
+		BD9F52A426522E23008E766E /* NotoSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD9F52A226522E23008E766E /* NotoSans-ExtraBold.ttf */; };
+		BD9F52A626522E8E008E766E /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9F52A526522E8E008E766E /* UIFont+.swift */; };
 		BDA893B7264FF51100903D2C /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA893B6264FF51100903D2C /* UIView+.swift */; };
 		BDFF52E4264FBAF6000DDF06 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFF52E3264FBAF6000DDF06 /* UIColor.swift */; };
 		C2A377F078F1AD1ACEECA7CB /* Pods_Be_Daangn_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED258F12B4158B8FC8AB8A19 /* Pods_Be_Daangn_iOS.framework */; };
@@ -46,6 +49,9 @@
 		BD5B3543264FAD5A006BA829 /* SecretKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretKey.swift; sourceTree = "<group>"; };
 		BD5B3545264FADB3006BA829 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		BD5B3547264FADD0006BA829 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		BD9F52A126522E23008E766E /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		BD9F52A226522E23008E766E /* NotoSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		BD9F52A526522E8E008E766E /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 		BDA893B6264FF51100903D2C /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		BDFF52E3264FBAF6000DDF06 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		CD6E2E9526E32D324FD196CD /* Pods-Be-Daangn-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Be-Daangn-iOS.release.xcconfig"; path = "Target Support Files/Pods-Be-Daangn-iOS/Pods-Be-Daangn-iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				BD5B3541264FACD5006BA829 /* Constants.swift */,
+				BD9F52A026522DB5008E766E /* Font */,
 				BDA893B0264FF32C00903D2C /* Base */,
 				BDA893AD264FF2F800903D2C /* Extension */,
 				BDA893AB264FF2E200903D2C /* Secret */,
@@ -171,6 +178,15 @@
 			path = News;
 			sourceTree = "<group>";
 		};
+		BD9F52A026522DB5008E766E /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				BD9F52A126522E23008E766E /* NotoSans-Bold.ttf */,
+				BD9F52A226522E23008E766E /* NotoSans-ExtraBold.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		BDA893AA264FF2D300903D2C /* CommonClass */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +209,7 @@
 				BD5B3547264FADD0006BA829 /* UIButton.swift */,
 				BDFF52E3264FBAF6000DDF06 /* UIColor.swift */,
 				BDA893B6264FF51100903D2C /* UIView+.swift */,
+				BD9F52A526522E8E008E766E /* UIFont+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -327,6 +344,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD9F52A426522E23008E766E /* NotoSans-ExtraBold.ttf in Resources */,
+				BD9F52A326522E23008E766E /* NotoSans-Bold.ttf in Resources */,
 				BD5B3536264FA813006BA829 /* NewsStoryboard.storyboard in Resources */,
 				BD5B351E264FA67C006BA829 /* LaunchScreen.storyboard in Resources */,
 				BD5B351B264FA67C006BA829 /* Assets.xcassets in Resources */,
@@ -384,6 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD9F52A626522E8E008E766E /* UIFont+.swift in Sources */,
 				BDA893B7264FF51100903D2C /* UIView+.swift in Sources */,
 				BD5B3512264FA67B006BA829 /* AppDelegate.swift in Sources */,
 				BD5B3544264FAD5A006BA829 /* SecretKey.swift in Sources */,
