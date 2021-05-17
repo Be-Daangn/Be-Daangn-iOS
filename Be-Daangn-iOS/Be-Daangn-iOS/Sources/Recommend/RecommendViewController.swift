@@ -17,6 +17,17 @@ class RecommendViewController: BaseViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     // MARK: - Properties
+    var dummyDataList: [RecommendStoreDataModel] = [
+        RecommendStoreDataModel(imageName: "recommend_1", name: "다운타우너", review: "89", customer: "31"),
+        RecommendStoreDataModel(imageName: "recommend_2", name: "오복수산", review: "75", customer: "24"),
+        RecommendStoreDataModel(imageName: "recommend_3", name: "파이프그라운드", review: "66", customer: "18"),
+        RecommendStoreDataModel(imageName: "recommend_1", name: "다운타우너", review: "89", customer: "31"),
+        RecommendStoreDataModel(imageName: "recommend_2", name: "오복수산", review: "75", customer: "24"),
+        RecommendStoreDataModel(imageName: "recommend_3", name: "파이프그라운드", review: "66", customer: "18"),
+        RecommendStoreDataModel(imageName: "recommend_1", name: "다운타우너", review: "89", customer: "31"),
+        RecommendStoreDataModel(imageName: "recommend_2", name: "오복수산", review: "75", customer: "24"),
+        RecommendStoreDataModel(imageName: "recommend_3", name: "파이프그라운드", review: "66", customer: "18"),
+    ]
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -78,17 +89,19 @@ extension RecommendViewController: UICollectionViewDelegate {}
 // MARK: - CollectionView DataSource
 extension RecommendViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return dummyDataList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RecommendStoreCVC.identifier,
                                                             for: indexPath) as? RecommendStoreCVC else { return UICollectionViewCell() }
-        cell.setData(image: "recommend_1",
-                     name: "가게 이름 테스트",
-                     review: "89",
-                     customer: "31")
+        
+        let dummyData = dummyDataList[indexPath.row]
+        cell.setData(image: dummyData.imageName,
+                     name: dummyData.name,
+                     review: dummyData.review,
+                     customer: dummyData.customer)
         
         return cell
     }
@@ -111,14 +124,10 @@ extension RecommendViewController: UICollectionViewDelegateFlowLayout {
         return 53
     }
 
-    // 아이템 간격
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-//        return 19
-//    }
 
     // 컬렉션뷰 여백 (padding)
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets.init(top: 43, left: 41, bottom: 0, right: 41)
+        return UIEdgeInsets.init(top: 43, left: 41, bottom: 70, right: 41)
     }
     
 }

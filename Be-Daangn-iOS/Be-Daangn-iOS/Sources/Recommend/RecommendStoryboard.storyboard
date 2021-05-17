@@ -6,7 +6,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -188,16 +187,7 @@
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="oVK-ti-XFN">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ah2-yg-2ts">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -208,13 +198,13 @@
                             <constraint firstItem="bOt-5c-xI2" firstAttribute="top" secondItem="rfH-7Q-bJg" secondAttribute="bottom" constant="23" id="Adr-nX-yCl"/>
                             <constraint firstItem="rfH-7Q-bJg" firstAttribute="top" secondItem="keR-KD-uL2" secondAttribute="bottom" constant="28" id="GOm-G5-b5p"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="F85-gh-SDg" secondAttribute="trailing" id="LFF-eY-sUX"/>
-                            <constraint firstItem="dvU-pK-h5t" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="55" id="aXf-Wp-0gp"/>
+                            <constraint firstItem="dvU-pK-h5t" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="55" id="aXf-Wp-0gp"/>
                             <constraint firstItem="84D-0t-3yv" firstAttribute="top" secondItem="bOt-5c-xI2" secondAttribute="bottom" constant="13" id="bOm-pb-yDk"/>
                             <constraint firstItem="F85-gh-SDg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="eXF-fv-yVC"/>
                             <constraint firstItem="84D-0t-3yv" firstAttribute="leading" secondItem="bOt-5c-xI2" secondAttribute="leading" id="eeu-yO-B1t"/>
                             <constraint firstAttribute="bottom" secondItem="F85-gh-SDg" secondAttribute="bottom" id="mpl-F9-OSD"/>
                             <constraint firstItem="rfH-7Q-bJg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="rgd-7G-Zgi"/>
-                            <constraint firstItem="keR-KD-uL2" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="53" id="tX1-GL-MgP"/>
+                            <constraint firstItem="keR-KD-uL2" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="53" id="tX1-GL-MgP"/>
                             <constraint firstItem="bOt-5c-xI2" firstAttribute="leading" secondItem="rfH-7Q-bJg" secondAttribute="leading" id="xza-qA-Im2"/>
                             <constraint firstItem="keR-KD-uL2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="37" id="y9K-Pj-ccV"/>
                         </constraints>
