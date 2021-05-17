@@ -12,12 +12,15 @@ class NewsViewController: BaseViewController {
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var middleView: UIView!
     @IBOutlet weak var middleTableView: UITableView!
+    @IBOutlet weak var newsLabel: UILabel!
     
     var newsServiceList : [NewsListDataModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setNewsServiceList()
+        
+        newsLabel.font = UIFont.NotoSans(.extraBold, size: 27)
         
         middleTableView.delegate = self
         middleTableView.dataSource = self
@@ -47,6 +50,7 @@ class NewsViewController: BaseViewController {
 extension NewsViewController : UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
         return 500
     }
     

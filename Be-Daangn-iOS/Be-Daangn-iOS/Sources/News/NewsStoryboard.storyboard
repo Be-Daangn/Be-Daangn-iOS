@@ -48,7 +48,7 @@
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="소식" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPz-vY-g81">
                                         <rect key="frame" x="32" y="105" width="47" height="33"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="27"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -176,6 +176,7 @@
                     <connections>
                         <outlet property="middleTableView" destination="j8M-Aj-SFw" id="3p4-UY-0Bp"/>
                         <outlet property="middleView" destination="tBW-IL-mad" id="bB0-1W-tXV"/>
+                        <outlet property="newsLabel" destination="xPz-vY-g81" id="fqG-ky-4sA"/>
                         <outlet property="topView" destination="imO-Qj-UBe" id="VKU-2L-EQ8"/>
                     </connections>
                 </viewController>
