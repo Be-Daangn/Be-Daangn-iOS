@@ -22,6 +22,10 @@
 		BD5B3544264FAD5A006BA829 /* SecretKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5B3543264FAD5A006BA829 /* SecretKey.swift */; };
 		BD5B3546264FADB3006BA829 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5B3545264FADB3006BA829 /* Device.swift */; };
 		BD5B3548264FADD0006BA829 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5B3547264FADD0006BA829 /* UIButton.swift */; };
+		BD5EF443265294C50025555C /* CornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5EF442265294C50025555C /* CornerButton.swift */; };
+		BD5EF44826529CE00025555C /* RecommendStoreCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5EF44626529CE00025555C /* RecommendStoreCVC.swift */; };
+		BD5EF44926529CE00025555C /* RecommendStoreCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD5EF44726529CE00025555C /* RecommendStoreCVC.xib */; };
+		BD5EF44B2652A4030025555C /* RecommendStoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5EF44A2652A4030025555C /* RecommendStoreDataModel.swift */; };
 		BD9F52A326522E23008E766E /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD9F52A126522E23008E766E /* NotoSans-Bold.ttf */; };
 		BD9F52A426522E23008E766E /* NotoSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD9F52A226522E23008E766E /* NotoSans-ExtraBold.ttf */; };
 		BD9F52A626522E8E008E766E /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9F52A526522E8E008E766E /* UIFont+.swift */; };
@@ -49,6 +53,10 @@
 		BD5B3543264FAD5A006BA829 /* SecretKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretKey.swift; sourceTree = "<group>"; };
 		BD5B3545264FADB3006BA829 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		BD5B3547264FADD0006BA829 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		BD5EF442265294C50025555C /* CornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerButton.swift; sourceTree = "<group>"; };
+		BD5EF44626529CE00025555C /* RecommendStoreCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendStoreCVC.swift; sourceTree = "<group>"; };
+		BD5EF44726529CE00025555C /* RecommendStoreCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendStoreCVC.xib; sourceTree = "<group>"; };
+		BD5EF44A2652A4030025555C /* RecommendStoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendStoreDataModel.swift; sourceTree = "<group>"; };
 		BD9F52A126522E23008E766E /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
 		BD9F52A226522E23008E766E /* NotoSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-ExtraBold.ttf"; sourceTree = "<group>"; };
 		BD9F52A526522E8E008E766E /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
@@ -191,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				BD5B3545264FADB3006BA829 /* Device.swift */,
+				BD5EF442265294C50025555C /* CornerButton.swift */,
 			);
 			path = CommonClass;
 			sourceTree = "<group>";
@@ -232,6 +241,8 @@
 		BDA893B2264FF38500903D2C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				BD5EF44626529CE00025555C /* RecommendStoreCVC.swift */,
+				BD5EF44726529CE00025555C /* RecommendStoreCVC.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -246,6 +257,7 @@
 		BDA893B8264FF57100903D2C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BD5EF44A2652A4030025555C /* RecommendStoreDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -345,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD9F52A426522E23008E766E /* NotoSans-ExtraBold.ttf in Resources */,
+				BD5EF44926529CE00025555C /* RecommendStoreCVC.xib in Resources */,
 				BD9F52A326522E23008E766E /* NotoSans-Bold.ttf in Resources */,
 				BD5B3536264FA813006BA829 /* NewsStoryboard.storyboard in Resources */,
 				BD5B351E264FA67C006BA829 /* LaunchScreen.storyboard in Resources */,
@@ -403,6 +416,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD5EF443265294C50025555C /* CornerButton.swift in Sources */,
 				BD9F52A626522E8E008E766E /* UIFont+.swift in Sources */,
 				BDA893B7264FF51100903D2C /* UIView+.swift in Sources */,
 				BD5B3512264FA67B006BA829 /* AppDelegate.swift in Sources */,
@@ -412,9 +426,11 @@
 				BD5B3538264FA890006BA829 /* BaseViewController.swift in Sources */,
 				BD5B3548264FADD0006BA829 /* UIButton.swift in Sources */,
 				BD5B353E264FA95C006BA829 /* NewsViewController.swift in Sources */,
+				BD5EF44B2652A4030025555C /* RecommendStoreDataModel.swift in Sources */,
 				BDFF52E4264FBAF6000DDF06 /* UIColor.swift in Sources */,
 				BD5B3542264FACD5006BA829 /* Constants.swift in Sources */,
 				BD5B353A264FA935006BA829 /* HomeViewController.swift in Sources */,
+				BD5EF44826529CE00025555C /* RecommendStoreCVC.swift in Sources */,
 				BD5B353C264FA942006BA829 /* RecommendViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
