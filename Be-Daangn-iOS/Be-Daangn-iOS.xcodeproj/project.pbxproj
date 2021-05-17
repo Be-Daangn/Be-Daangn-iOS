@@ -23,6 +23,8 @@
 		BD5B3546264FADB3006BA829 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5B3545264FADB3006BA829 /* Device.swift */; };
 		BD5B3548264FADD0006BA829 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5B3547264FADD0006BA829 /* UIButton.swift */; };
 		BD5EF443265294C50025555C /* CornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5EF442265294C50025555C /* CornerButton.swift */; };
+		BD5EF44826529CE00025555C /* RecommendStoreCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5EF44626529CE00025555C /* RecommendStoreCVC.swift */; };
+		BD5EF44926529CE00025555C /* RecommendStoreCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD5EF44726529CE00025555C /* RecommendStoreCVC.xib */; };
 		BD9F52A326522E23008E766E /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD9F52A126522E23008E766E /* NotoSans-Bold.ttf */; };
 		BD9F52A426522E23008E766E /* NotoSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD9F52A226522E23008E766E /* NotoSans-ExtraBold.ttf */; };
 		BD9F52A626522E8E008E766E /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9F52A526522E8E008E766E /* UIFont+.swift */; };
@@ -51,6 +53,8 @@
 		BD5B3545264FADB3006BA829 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		BD5B3547264FADD0006BA829 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		BD5EF442265294C50025555C /* CornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerButton.swift; sourceTree = "<group>"; };
+		BD5EF44626529CE00025555C /* RecommendStoreCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendStoreCVC.swift; sourceTree = "<group>"; };
+		BD5EF44726529CE00025555C /* RecommendStoreCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendStoreCVC.xib; sourceTree = "<group>"; };
 		BD9F52A126522E23008E766E /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
 		BD9F52A226522E23008E766E /* NotoSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-ExtraBold.ttf"; sourceTree = "<group>"; };
 		BD9F52A526522E8E008E766E /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
@@ -235,6 +239,8 @@
 		BDA893B2264FF38500903D2C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				BD5EF44626529CE00025555C /* RecommendStoreCVC.swift */,
+				BD5EF44726529CE00025555C /* RecommendStoreCVC.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -348,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD9F52A426522E23008E766E /* NotoSans-ExtraBold.ttf in Resources */,
+				BD5EF44926529CE00025555C /* RecommendStoreCVC.xib in Resources */,
 				BD9F52A326522E23008E766E /* NotoSans-Bold.ttf in Resources */,
 				BD5B3536264FA813006BA829 /* NewsStoryboard.storyboard in Resources */,
 				BD5B351E264FA67C006BA829 /* LaunchScreen.storyboard in Resources */,
@@ -419,6 +426,7 @@
 				BDFF52E4264FBAF6000DDF06 /* UIColor.swift in Sources */,
 				BD5B3542264FACD5006BA829 /* Constants.swift in Sources */,
 				BD5B353A264FA935006BA829 /* HomeViewController.swift in Sources */,
+				BD5EF44826529CE00025555C /* RecommendStoreCVC.swift in Sources */,
 				BD5B353C264FA942006BA829 /* RecommendViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

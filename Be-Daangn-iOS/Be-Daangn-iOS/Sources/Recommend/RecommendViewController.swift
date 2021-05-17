@@ -67,6 +67,8 @@ extension RecommendViewController {
          */
         collectionView.layer.cornerRadius = 40
         collectionView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        
+        collectionView.register(UINib(nibName: RecommendStoreCVC.identifier, bundle: nil), forCellWithReuseIdentifier: RecommendStoreCVC.identifier)
     }
 }
 
@@ -76,13 +78,47 @@ extension RecommendViewController: UICollectionViewDelegate {}
 // MARK: - CollectionView DataSource
 extension RecommendViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RecommendStoreCVC.identifier,
+                                                            for: indexPath) as? RecommendStoreCVC else { return UICollectionViewCell() }
+        cell.setData(image: "recommend_1",
+                     name: "가게 이름 테스트",
+                     review: "89",
+                     customer: "31")
+        
+        return cell
     }
 }
 
 // MARK: - CollectionView Delegate FlowLayout
-extension RecommendViewController: UICollectionViewDelegateFlowLayout {}
+extension RecommendViewController: UICollectionViewDelegateFlowLayout {
+    
+    // 셀 크기 조정하기!! (스크린 사이즈를 잡아주고 들어가야, 모든 기기에서 동일한 비율을 얻을 수 있음)
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let screenSize = UIScreen.main.bounds.width
+        let widthSize = screenSize * (293 / 375)
+        let heightSize = screenSize * (297 / 375)
+
+        return CGSize(width: widthSize, height: heightSize)
+    }
+
+    // 라인 간격
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 53
+    }
+
+    // 아이템 간격
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+//        return 19
+//    }
+
+    // 컬렉션뷰 여백 (padding)
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets.init(top: 43, left: 41, bottom: 0, right: 41)
+    }
+    
+}
