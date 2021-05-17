@@ -6,6 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,9 +17,220 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="keR-KD-uL2">
+                                <rect key="frame" x="37" y="53" width="24" height="24"/>
+                                <state key="normal" image="navi_back_btn"/>
+                                <connections>
+                                    <action selector="backButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Vt3-Ri-Prc"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="dvU-pK-h5t">
+                                <rect key="frame" x="285" y="55" width="53" height="21"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmf-Mv-Jzu">
+                                        <rect key="frame" x="0.0" y="0.0" width="21" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="21" id="6eI-XJ-TJW"/>
+                                            <constraint firstAttribute="height" constant="21" id="k3h-d2-2xW"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="navi_bookmark_btn"/>
+                                        <connections>
+                                            <action selector="bookmarkButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="4yY-x5-nqj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6W-fR-VSK">
+                                        <rect key="frame" x="32" y="0.0" width="21" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="7zL-Dr-0rW"/>
+                                            <constraint firstAttribute="width" constant="21" id="JEZ-AM-Zh5"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="navi_write_btn"/>
+                                        <connections>
+                                            <action selector="writeButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="W4i-cf-o1c"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="추천 가게" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfH-7Q-bJg">
+                                <rect key="frame" x="40" y="105" width="63.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bOt-5c-xI2">
+                                <rect key="frame" x="40" y="148.5" width="214" height="24"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Rk-J6-pZX" customClass="CornerButton" customModule="Be_Daangn_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="24"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="3" maxX="10" maxY="3"/>
+                                        <state key="normal" title="한식">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJk-Tv-26X" customClass="CornerButton" customModule="Be_Daangn_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="56" y="0.0" width="46" height="24"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="3" maxX="10" maxY="3"/>
+                                        <state key="normal" title="일식">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rr0-Gu-a5q" customClass="CornerButton" customModule="Be_Daangn_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="112" y="0.0" width="46" height="24"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="3" maxX="10" maxY="3"/>
+                                        <state key="normal" title="중식">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVA-Sb-Vac" customClass="CornerButton" customModule="Be_Daangn_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="168" y="0.0" width="46" height="24"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="3" maxX="10" maxY="3"/>
+                                        <state key="normal" title="분식">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="73G-I1-ddA"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="84D-0t-3yv">
+                                <rect key="frame" x="40" y="185.5" width="277" height="25"/>
+                                <subviews>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8wQ-cH-o79" customClass="CornerButton" customModule="Be_Daangn_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="25"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="3" maxX="8" maxY="4"/>
+                                        <state key="normal" title="혼밥하기 좋은">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQX-q9-sMy" customClass="CornerButton" customModule="Be_Daangn_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="108" y="0.0" width="89" height="25"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="3" maxX="10" maxY="4"/>
+                                        <state key="normal" title="만원의 행복">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnr-iY-1DQ" customClass="CornerButton" customModule="Be_Daangn_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="205" y="0.0" width="72" height="25"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="3" maxX="10" maxY="4"/>
+                                        <state key="normal" title="맛집랭킹">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Brp-Yl-dLT"/>
+                                </constraints>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="F85-gh-SDg">
+                                <rect key="frame" x="0.0" y="263.5" width="375" height="403.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="f9l-Kk-fD0">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="oVK-ti-XFN">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ah2-yg-2ts">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.6705882352941176" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dvU-pK-h5t" secondAttribute="trailing" constant="37" id="2Co-z3-DQN"/>
+                            <constraint firstItem="F85-gh-SDg" firstAttribute="top" secondItem="84D-0t-3yv" secondAttribute="bottom" constant="53" id="8lS-L8-Pa9"/>
+                            <constraint firstItem="bOt-5c-xI2" firstAttribute="top" secondItem="rfH-7Q-bJg" secondAttribute="bottom" constant="23" id="Adr-nX-yCl"/>
+                            <constraint firstItem="rfH-7Q-bJg" firstAttribute="top" secondItem="keR-KD-uL2" secondAttribute="bottom" constant="28" id="GOm-G5-b5p"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="F85-gh-SDg" secondAttribute="trailing" id="LFF-eY-sUX"/>
+                            <constraint firstItem="dvU-pK-h5t" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="55" id="aXf-Wp-0gp"/>
+                            <constraint firstItem="84D-0t-3yv" firstAttribute="top" secondItem="bOt-5c-xI2" secondAttribute="bottom" constant="13" id="bOm-pb-yDk"/>
+                            <constraint firstItem="F85-gh-SDg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="eXF-fv-yVC"/>
+                            <constraint firstItem="84D-0t-3yv" firstAttribute="leading" secondItem="bOt-5c-xI2" secondAttribute="leading" id="eeu-yO-B1t"/>
+                            <constraint firstAttribute="bottom" secondItem="F85-gh-SDg" secondAttribute="bottom" id="mpl-F9-OSD"/>
+                            <constraint firstItem="rfH-7Q-bJg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="rgd-7G-Zgi"/>
+                            <constraint firstItem="keR-KD-uL2" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="53" id="tX1-GL-MgP"/>
+                            <constraint firstItem="bOt-5c-xI2" firstAttribute="leading" secondItem="rfH-7Q-bJg" secondAttribute="leading" id="xza-qA-Im2"/>
+                            <constraint firstItem="keR-KD-uL2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="37" id="y9K-Pj-ccV"/>
+                        </constraints>
                     </view>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="TitleLabel" destination="rfH-7Q-bJg" id="8Bx-wW-8Kd"/>
+                        <outlet property="collectionView" destination="F85-gh-SDg" id="aok-v1-RIa"/>
+                        <outletCollection property="TagButtonCollection" destination="6Rk-J6-pZX" collectionClass="NSMutableArray" id="v3x-bo-Hj3"/>
+                        <outletCollection property="TagButtonCollection" destination="MJk-Tv-26X" collectionClass="NSMutableArray" id="esL-Ey-SmH"/>
+                        <outletCollection property="TagButtonCollection" destination="Rr0-Gu-a5q" collectionClass="NSMutableArray" id="kh1-Aj-c0b"/>
+                        <outletCollection property="TagButtonCollection" destination="iVA-Sb-Vac" collectionClass="NSMutableArray" id="f6s-X1-RzB"/>
+                        <outletCollection property="TagButtonCollection" destination="8wQ-cH-o79" collectionClass="NSMutableArray" id="EKA-Ca-uHA"/>
+                        <outletCollection property="TagButtonCollection" destination="yQX-q9-sMy" collectionClass="NSMutableArray" id="bz0-s4-nLe"/>
+                        <outletCollection property="TagButtonCollection" destination="cnr-iY-1DQ" collectionClass="NSMutableArray" id="n7Y-wd-CDc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -26,6 +238,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="navi_back_btn" width="24" height="24"/>
+        <image name="navi_bookmark_btn" width="21" height="21"/>
+        <image name="navi_write_btn" width="21" height="21"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
