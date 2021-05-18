@@ -37,6 +37,11 @@ class RecommendViewController: BaseViewController {
         configureUI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        // view가 다시 나타날때 collectionView 데이터 리로드
+        collectionView.reloadData()
+    }
+    
     // MARK: - IBActions
     /// 태그 버튼 클릭 이벤트
     /// [o] 어떤 식으로 다중 선택 구현할건지
@@ -53,7 +58,10 @@ class RecommendViewController: BaseViewController {
         // 2. 선택된 태그와 겹치는 태그가 있는 모델만 걸러주기
         filterTags = dummyDataList
             .filter({ data in
-                Array(Set(data.tags!).intersection(Set(selectedTags))) != []
+                // 1. 포함되는 태그가 하나만 있어도 되는지
+                //Array(Set(data.tags!).intersection(Set(selectedTags))) != []
+                // 2. 태그를 전부 다 포함하는 경우를 걸러야 하는지
+                Set(selectedTags).isSubset(of: Set(data.tags!))
             })
         
         // 3. 선택된 태그가 없을 때는 전체 목록 다 표시해야 함
@@ -84,6 +92,10 @@ class RecommendViewController: BaseViewController {
 // MARK: - Custom Function Part
 // IBAction 제외한 함수들의 세팅은 여기서 하도록 함
 extension RecommendViewController {
+    
+    @objc func bookmarkButtonClicked(sender: UIButton) {
+        print(sender.tag)
+    }
     
     private func setButtonColor(state: Bool, tag: Int) {
         // 눌렸을때
@@ -147,10 +159,12 @@ extension RecommendViewController: UICollectionViewDataSource {
                                                             for: indexPath) as? RecommendStoreCVC else { return UICollectionViewCell() }
         
         let dummyData = filterTags[indexPath.row]
+
         cell.setData(image: dummyData.imageName,
                      name: dummyData.name,
                      review: dummyData.review,
                      customer: dummyData.customer)
+
         
         return cell
     }

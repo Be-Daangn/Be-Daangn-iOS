@@ -39,6 +39,7 @@
                                     <constraint firstAttribute="height" constant="20" id="Qp9-r4-QfS"/>
                                     <constraint firstAttribute="width" constant="15" id="nKc-cH-J2o"/>
                                 </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" backgroundImage="recommend_bookmark_btn"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="MLm-XL-rbm">
@@ -84,6 +85,7 @@
             </constraints>
             <size key="customSize" width="472" height="305"/>
             <connections>
+                <outlet property="bookmarkButton" destination="b3n-wx-c2K" id="MS6-0z-0od"/>
                 <outlet property="storeCustomerLabel" destination="hh3-KC-bB6" id="JbV-Ff-smm"/>
                 <outlet property="storeImageView" destination="qvj-TW-hDS" id="nQF-Ho-k5r"/>
                 <outlet property="storeNameLabel" destination="oYW-Kd-jio" id="lYV-nc-JKD"/>

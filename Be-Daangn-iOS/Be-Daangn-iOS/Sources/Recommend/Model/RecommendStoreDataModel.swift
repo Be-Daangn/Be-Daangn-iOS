@@ -15,6 +15,8 @@ struct RecommendStoreDataModel {
     var review: String
     var customer: String
     
+    var bookmark: Bool = false
+    
     // Tag는 우선 Int Array로 만들어놓자 (0~6까지)
     var tags: [Int]?
 }

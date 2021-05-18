@@ -218,10 +218,10 @@
                                 <cells/>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Taw-a3-XnR">
-                                <rect key="frame" x="0.0" y="609" width="375" height="58"/>
+                                <rect key="frame" x="0.0" y="596" width="375" height="71"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fk-1a-vW4">
-                                        <rect key="frame" x="44" y="0.0" width="23" height="23"/>
+                                        <rect key="frame" x="44" y="13" width="23" height="23"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="23" id="3Yh-Db-wus"/>
                                             <constraint firstAttribute="width" constant="23" id="LR1-gj-rxp"/>
@@ -229,7 +229,7 @@
                                         <state key="normal" backgroundImage="recommendBottombarIcon1"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQG-DW-zhD">
-                                        <rect key="frame" x="176" y="0.0" width="23" height="23"/>
+                                        <rect key="frame" x="176" y="13" width="23" height="23"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="23" id="TJr-Hu-nQV"/>
                                             <constraint firstAttribute="height" constant="23" id="t1h-3e-Ezy"/>
@@ -237,7 +237,7 @@
                                         <state key="normal" backgroundImage="recommendBottombarIcon2"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LuV-A8-X2S">
-                                        <rect key="frame" x="310" y="2" width="21" height="21"/>
+                                        <rect key="frame" x="310" y="15" width="21" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="21" id="Cd2-pD-nwW"/>
                                             <constraint firstAttribute="height" constant="21" id="rEt-h8-aeF"/>
@@ -247,12 +247,12 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="LuV-A8-X2S" secondAttribute="bottom" constant="35" id="IEZ-tK-tGn"/>
                                     <constraint firstItem="4fk-1a-vW4" firstAttribute="leading" secondItem="Taw-a3-XnR" secondAttribute="leading" constant="44" id="Nyf-5u-xOb"/>
                                     <constraint firstAttribute="trailing" secondItem="LuV-A8-X2S" secondAttribute="trailing" constant="44" id="OYd-nh-9yo"/>
-                                    <constraint firstItem="4fk-1a-vW4" firstAttribute="top" secondItem="Taw-a3-XnR" secondAttribute="top" id="OgA-H4-vB1"/>
-                                    <constraint firstItem="LuV-A8-X2S" firstAttribute="top" secondItem="Taw-a3-XnR" secondAttribute="top" constant="2" id="X4J-Du-pbC"/>
-                                    <constraint firstItem="sQG-DW-zhD" firstAttribute="top" secondItem="Taw-a3-XnR" secondAttribute="top" id="YMi-MX-e7S"/>
-                                    <constraint firstAttribute="height" constant="58" id="uEw-MU-Ufs"/>
+                                    <constraint firstAttribute="bottom" secondItem="4fk-1a-vW4" secondAttribute="bottom" constant="35" id="UmB-T5-z0M"/>
+                                    <constraint firstAttribute="bottom" secondItem="sQG-DW-zhD" secondAttribute="bottom" constant="35" id="doq-Mo-BAp"/>
+                                    <constraint firstAttribute="height" constant="71" id="uEw-MU-Ufs"/>
                                     <constraint firstItem="sQG-DW-zhD" firstAttribute="centerX" secondItem="Taw-a3-XnR" secondAttribute="centerX" id="ygo-Va-1Li"/>
                                 </constraints>
                             </view>
