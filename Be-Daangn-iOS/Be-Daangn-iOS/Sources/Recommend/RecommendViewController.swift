@@ -88,7 +88,7 @@ class RecommendViewController: BaseViewController {
     
     /// 글쓰기 버튼 클릭 이벤트
     @IBAction func writeButtonClicked(_ sender: Any) {
-        // 미 구현
+        presentAlert(title: "준비중 🙋🏻‍♂️", message: "아직 준비가 안 됐어요~~",okAction: nil)
     }
     
 }
