@@ -65,8 +65,8 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.67058825489999996" blue="0.28627452250000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="JNZ-Nu-a6I" secondAttribute="height" multiplier="380:150" id="Jtc-Ho-Imc"/>
                                     <constraint firstItem="uax-AE-Hye" firstAttribute="leading" secondItem="JNZ-Nu-a6I" secondAttribute="leading" constant="41" id="SwX-bS-4ED"/>
+                                    <constraint firstAttribute="width" secondItem="JNZ-Nu-a6I" secondAttribute="height" multiplier="380:150" id="eK8-Lx-Saa"/>
                                     <constraint firstItem="j9e-c0-dlZ" firstAttribute="top" secondItem="uax-AE-Hye" secondAttribute="bottom" constant="25" id="rgo-sp-ACT"/>
                                     <constraint firstAttribute="trailing" secondItem="j9e-c0-dlZ" secondAttribute="trailing" constant="35" id="sYs-nH-n3J"/>
                                     <constraint firstItem="uax-AE-Hye" firstAttribute="top" secondItem="JNZ-Nu-a6I" secondAttribute="top" constant="20" id="ssl-Hf-Km1"/>
@@ -74,18 +74,18 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FDE-7r-Aug">
-                                <rect key="frame" x="0.0" y="291.5" width="414" height="506"/>
+                                <rect key="frame" x="0.0" y="148" width="414" height="649.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MainButtonTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainButtonTableViewCell" rowHeight="17" id="Zbz-MW-I84" customClass="MainButtonTableViewCell" customModule="Be_Daangn_iOS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="17"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MainButtonTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainButtonTableViewCell" rowHeight="52" id="Zbz-MW-I84" customClass="MainButtonTableViewCell" customModule="Be_Daangn_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="52"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zbz-MW-I84" id="KXe-gl-Zy3">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="17"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buttonLayout" translatesAutoresizingMaskIntoConstraints="NO" id="IlK-rj-0QR">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="17"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -94,6 +94,14 @@
                                                 <constraint firstAttribute="trailing" secondItem="IlK-rj-0QR" secondAttribute="trailing" id="cnQ-Mh-tUw"/>
                                                 <constraint firstItem="IlK-rj-0QR" firstAttribute="leading" secondItem="KXe-gl-Zy3" secondAttribute="leading" id="jBg-Ry-vgZ"/>
                                             </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="NewsTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsTableViewCell" rowHeight="179" id="ITT-wg-ihx" customClass="NewsTableViewCell" customModule="Be_Daangn_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="76.5" width="414" height="179"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ITT-wg-ihx" id="NXA-o1-0Mb">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="179"/>
+                                            <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -108,11 +116,11 @@
                             <constraint firstItem="QVe-BD-ZIl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="9eM-bW-MAU"/>
                             <constraint firstAttribute="bottom" secondItem="K1o-2S-mki" secondAttribute="bottom" id="Bay-4E-4po"/>
                             <constraint firstItem="JNZ-Nu-a6I" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="DO1-CB-dQd"/>
-                            <constraint firstItem="FDE-7r-Aug" firstAttribute="top" secondItem="JNZ-Nu-a6I" secondAttribute="bottom" id="JVG-Je-kiw"/>
                             <constraint firstItem="QVe-BD-ZIl" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Qbr-Su-3Sp"/>
                             <constraint firstItem="K1o-2S-mki" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="ZCz-Ti-3GX"/>
-                            <constraint firstItem="JNZ-Nu-a6I" firstAttribute="top" secondItem="QVe-BD-ZIl" secondAttribute="bottom" constant="-20" id="dKs-3i-vbt"/>
+                            <constraint firstItem="JNZ-Nu-a6I" firstAttribute="top" secondItem="QVe-BD-ZIl" secondAttribute="bottom" constant="-20" identifier="searchViewConstraint" id="r5P-Cp-HAq"/>
                             <constraint firstItem="FDE-7r-Aug" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="xap-Qi-zNc"/>
+                            <constraint firstItem="FDE-7r-Aug" firstAttribute="top" secondItem="QVe-BD-ZIl" secondAttribute="bottom" id="y8v-6x-ibe"/>
                             <constraint firstItem="FDE-7r-Aug" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="yOl-tM-aeO"/>
                             <constraint firstItem="QVe-BD-ZIl" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="zHu-2O-t0K"/>
                         </constraints>
@@ -120,7 +128,8 @@
                     <connections>
                         <outlet property="headerView" destination="QVe-BD-ZIl" id="hqk-FB-vFP"/>
                         <outlet property="homeTableView" destination="FDE-7r-Aug" id="cki-px-Kk1"/>
-                        <outlet property="searchView" destination="JNZ-Nu-a6I" id="3x7-yD-gHv"/>
+                        <outlet property="searchView" destination="JNZ-Nu-a6I" id="EmS-Mt-n8K"/>
+                        <outlet property="searchViewConstraint" destination="r5P-Cp-HAq" id="vG8-zr-2UH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
