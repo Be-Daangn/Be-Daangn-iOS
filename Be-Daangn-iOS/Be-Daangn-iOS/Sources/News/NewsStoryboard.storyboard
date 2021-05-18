@@ -67,10 +67,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tBW-IL-mad">
-                                <rect key="frame" x="0.0" y="260" width="375" height="740"/>
+                                <rect key="frame" x="0.0" y="260" width="375" height="668"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j8M-Aj-SFw">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="740"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="668"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsTableViewCell" rowHeight="514" id="oEO-9R-U6h" customClass="NewsTableViewCell" customModule="Be_Daangn_iOS" customModuleProvider="target">
@@ -159,16 +159,51 @@
                                     <constraint firstItem="j8M-Aj-SFw" firstAttribute="top" secondItem="tBW-IL-mad" secondAttribute="top" id="fsI-MW-izj"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9aO-jN-yxx">
+                                <rect key="frame" x="0.0" y="928" width="375" height="72"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6X-ma-uOv">
+                                        <rect key="frame" x="44" y="14" width="23" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="e0H-wN-NhF"/>
+                                            <constraint firstAttribute="width" constant="23" id="gYP-oy-nib"/>
+                                        </constraints>
+                                        <state key="normal" image="newsBottombarIcon1"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGm-HU-gY1">
+                                        <rect key="frame" x="176" y="14" width="23" height="23"/>
+                                        <state key="normal" image="newsBottombarIcon2"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqQ-TS-Ner">
+                                        <rect key="frame" x="306" y="15" width="21" height="22"/>
+                                        <state key="normal" image="newsBottombarIcon3"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="fqQ-TS-Ner" secondAttribute="trailing" constant="48" id="23Y-MB-7nO"/>
+                                    <constraint firstAttribute="height" constant="72" id="2Yl-Vd-XN1"/>
+                                    <constraint firstAttribute="bottom" secondItem="fqQ-TS-Ner" secondAttribute="bottom" constant="35" id="3E3-KA-MQN"/>
+                                    <constraint firstItem="H6X-ma-uOv" firstAttribute="leading" secondItem="9aO-jN-yxx" secondAttribute="leading" constant="44" id="B3e-tu-VfB"/>
+                                    <constraint firstAttribute="bottom" secondItem="BGm-HU-gY1" secondAttribute="bottom" constant="35" id="OYU-LL-VhV"/>
+                                    <constraint firstAttribute="bottom" secondItem="H6X-ma-uOv" secondAttribute="bottom" constant="35" id="QYA-ql-29u"/>
+                                    <constraint firstItem="BGm-HU-gY1" firstAttribute="centerX" secondItem="9aO-jN-yxx" secondAttribute="centerX" id="fTt-pN-OL1"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" red="1" green="0.6705882353" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="9aO-jN-yxx" secondAttribute="bottom" id="1h5-er-Uxx"/>
                             <constraint firstItem="tBW-IL-mad" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="9Et-DI-qlx"/>
                             <constraint firstItem="imO-Qj-UBe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Bng-4R-Um4"/>
                             <constraint firstItem="tBW-IL-mad" firstAttribute="top" secondItem="imO-Qj-UBe" secondAttribute="bottom" id="CwT-Z3-pqO"/>
+                            <constraint firstItem="9aO-jN-yxx" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="DSt-Ci-aQJ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9aO-jN-yxx" secondAttribute="trailing" id="EMy-pj-Wb2"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="tBW-IL-mad" secondAttribute="trailing" id="LoT-8Q-cAn"/>
                             <constraint firstItem="imO-Qj-UBe" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="WMf-YF-o2a"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="tBW-IL-mad" secondAttribute="bottom" id="WaH-pi-aRe"/>
+                            <constraint firstItem="9aO-jN-yxx" firstAttribute="top" secondItem="tBW-IL-mad" secondAttribute="bottom" id="YLP-Yw-JUw"/>
+                            <constraint firstItem="9aO-jN-yxx" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="rbA-s3-Jyr"/>
                             <constraint firstItem="imO-Qj-UBe" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="sHJ-uK-H0e"/>
                         </constraints>
                     </view>
@@ -188,6 +223,9 @@
     <resources>
         <image name="bell" catalog="system" width="128" height="124"/>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <image name="newsBottombarIcon1" width="23" height="23"/>
+        <image name="newsBottombarIcon2" width="23" height="23"/>
+        <image name="newsBottombarIcon3" width="21" height="21"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

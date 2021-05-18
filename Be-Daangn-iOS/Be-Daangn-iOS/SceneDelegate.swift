@@ -20,8 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(windowScene: scene)
         
-        let homeStoryboard = UIStoryboard(name: "NewsStoryboard", bundle: nil)
-        let homeViewController = homeStoryboard.instantiateViewController(identifier: "NewsViewController")
+        let homeStoryboard = UIStoryboard(name: "HomeStoryboard", bundle: nil)
+        let homeViewController = homeStoryboard.instantiateViewController(identifier: "HomeViewController")
         
         self.window?.rootViewController = homeViewController
         
