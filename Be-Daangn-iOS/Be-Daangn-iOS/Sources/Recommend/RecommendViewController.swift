@@ -80,6 +80,10 @@ class RecommendViewController: BaseViewController {
     
     /// 북마크 버튼 클릭 이벤트 ▶︎ 북마크(저장됨) 뷰로 화면전환
     @IBAction func bookmarkButtonClicked(_ sender: Any) {
+        let bookmarkStoryboard = UIStoryboard(name: "BookmarkStoryboard", bundle: nil)
+        let bookmarkVC = bookmarkStoryboard.instantiateViewController(identifier: "BookmarkViewController") as! BookmarkViewController
+//        bookmarkVC.modalPresentationStyle = .overFullScreen
+        self.present(bookmarkVC, animated: true, completion: nil)
     }
     
     /// 글쓰기 버튼 클릭 이벤트
