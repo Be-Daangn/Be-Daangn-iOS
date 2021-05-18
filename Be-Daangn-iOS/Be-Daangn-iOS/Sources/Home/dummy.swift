@@ -8,8 +8,14 @@
 import Foundation
 
 struct newsDataModel {
-    var image : String
+    var Newsimage : String
     var name : String
     var subname : String
     var location : String
+}
+struct sectionDataModel {
+    var name: String
+}
+struct smallSectionDataModel {
+    var name : String
 }

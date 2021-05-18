@@ -11,6 +11,11 @@ class NewsTableViewCell: UITableViewCell {
 
     static let identifier : String = "NewsTableViewCell"
 
+    @IBOutlet weak var newsImage: UIImageView!
+    @IBOutlet weak var nameLable: UILabel!
+    @IBOutlet weak var subNameLable: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var background: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,10 +24,19 @@ class NewsTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+        self.selectionStyle = .none
 
         // Configure the view for the selected state
     }
     
-    
+    func setData(icon : String, name : String, subname:String, location : String){
+        if let newsIcon = UIImage(named: icon){
+            newsImage.image = newsIcon
+        }
+        nameLable.text = name
+        subNameLable.text = subname
+        locationLabel.text = location
+        
+    }
 
 }
