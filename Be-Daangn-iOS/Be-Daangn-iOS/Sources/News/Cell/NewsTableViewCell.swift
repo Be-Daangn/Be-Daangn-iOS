@@ -26,7 +26,7 @@ class NewsTableViewCell: UITableViewCell {
         // 라벨 폰트 적용
         newsTitleLabel.font = UIFont.NotoSans(.bold, size: 20)
         newsAddressLabel.font = UIFont.NotoSans(.extraBold, size: 12)
-        //newsDetailLabel.font = UIFont.NotoSans(.medium, size: 14)
+        newsDetailLabel.font = UIFont.NotoSans(.medium, size: 14)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
