@@ -12,6 +12,9 @@
         <array key="NotoSans-Bold.ttf">
             <string>NotoSans-Bold</string>
         </array>
+        <array key="NotoSans-ExtraBold.ttf">
+            <string>NotoSans-ExtraBold</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Home View Controller-->
@@ -84,7 +87,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buttonLayout" translatesAutoresizingMaskIntoConstraints="NO" id="IlK-rj-0QR">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buttonLayout" translatesAutoresizingMaskIntoConstraints="NO" id="IlK-rj-0QR">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
                                                 </imageView>
                                             </subviews>
@@ -96,15 +99,15 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="SectionTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SectionTableViewCell" rowHeight="63" id="RMN-tG-rYo" customClass="SectionTableViewCell" customModule="Be_Daangn_iOS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="76.333333969116211" width="414" height="63"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="SectionTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SectionTableViewCell" rowHeight="33" id="RMN-tG-rYo" customClass="SectionTableViewCell" customModule="Be_Daangn_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="76.333333969116211" width="414" height="33"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RMN-tG-rYo" id="neR-j2-KGQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="63"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="33"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wiJ-FW-rC3">
-                                                    <rect key="frame" x="39" y="11" width="66" height="41"/>
+                                                    <rect key="frame" x="39" y="11" width="66" height="11"/>
                                                     <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="27"/>
                                                     <color key="textColor" red="0.40000000000000002" green="0.40000003579999999" blue="0.40000003579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
@@ -120,15 +123,38 @@
                                             <outlet property="nameLabel" destination="wiJ-FW-rC3" id="pcC-OL-x6P"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="NewsTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsTableViewCell" rowHeight="179" id="ITT-wg-ihx" customClass="NewsTableViewCell" customModule="Be_Daangn_iOS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="139.33333396911621" width="414" height="179"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="SmalllSectionTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SmalllSectionTableViewCell" rowHeight="22" id="sBh-6f-Klc" customClass="SmalllSectionTableViewCell" customModule="Be_Daangn_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="109.33333396911621" width="414" height="22"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ITT-wg-ihx" id="NXA-o1-0Mb">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="179"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sBh-6f-Klc" id="u7l-We-Mf1">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="22"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newsBackground" translatesAutoresizingMaskIntoConstraints="NO" id="ABR-1o-gB1">
-                                                    <rect key="frame" x="30" y="11" width="354" height="93"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJA-G4-dur">
+                                                    <rect key="frame" x="331" y="11" width="33" height="17"/>
+                                                    <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="12"/>
+                                                    <color key="textColor" red="0.57647061349999995" green="0.57647061349999995" blue="0.58039218189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="BJA-G4-dur" secondAttribute="trailing" constant="30" id="PS7-bw-Lnc"/>
+                                                <constraint firstItem="BJA-G4-dur" firstAttribute="top" secondItem="u7l-We-Mf1" secondAttribute="topMargin" id="pq0-vc-hNi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="BJA-G4-dur" id="dIh-ba-nl3"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="NewsTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsTableViewCell" rowHeight="110" id="ITT-wg-ihx" customClass="NewsTableViewCell" customModule="Be_Daangn_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="131.33333396911621" width="414" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ITT-wg-ihx" id="NXA-o1-0Mb">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newsBackground" translatesAutoresizingMaskIntoConstraints="NO" id="ABR-1o-gB1">
+                                                    <rect key="frame" x="35" y="11" width="344" height="99"/>
                                                 </imageView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="12N-oX-N3N">
                                                     <rect key="frame" x="50" y="25" width="69" height="69"/>
@@ -163,10 +189,11 @@
                                                 <constraint firstItem="ABR-1o-gB1" firstAttribute="top" secondItem="NXA-o1-0Mb" secondAttribute="topMargin" id="Zxh-4g-PNM"/>
                                                 <constraint firstItem="4dj-uz-17T" firstAttribute="leading" secondItem="DHV-c8-VsO" secondAttribute="trailing" constant="5" id="a3s-id-7EQ"/>
                                                 <constraint firstItem="4dj-uz-17T" firstAttribute="top" secondItem="av8-tj-IVo" secondAttribute="bottom" constant="10" id="dny-5f-FI2"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="ABR-1o-gB1" secondAttribute="trailing" constant="10" id="gVj-DN-Ilo"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ABR-1o-gB1" secondAttribute="trailing" constant="15" id="gVj-DN-Ilo"/>
+                                                <constraint firstAttribute="bottom" secondItem="ABR-1o-gB1" secondAttribute="bottom" id="hXj-vc-0UW"/>
                                                 <constraint firstItem="av8-tj-IVo" firstAttribute="leading" secondItem="12N-oX-N3N" secondAttribute="trailing" constant="15" id="hjo-8m-PjI"/>
                                                 <constraint firstItem="av8-tj-IVo" firstAttribute="top" secondItem="NXA-o1-0Mb" secondAttribute="topMargin" constant="25" id="yHc-qb-vEu"/>
-                                                <constraint firstItem="ABR-1o-gB1" firstAttribute="leading" secondItem="NXA-o1-0Mb" secondAttribute="leadingMargin" constant="10" id="yMa-Ol-lEc"/>
+                                                <constraint firstItem="ABR-1o-gB1" firstAttribute="leading" secondItem="NXA-o1-0Mb" secondAttribute="leadingMargin" constant="15" id="yMa-Ol-lEc"/>
                                                 <constraint firstItem="12N-oX-N3N" firstAttribute="leading" secondItem="NXA-o1-0Mb" secondAttribute="leading" constant="50" id="z80-zB-t2q"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -178,27 +205,86 @@
                                             <outlet property="subNameLable" destination="DHV-c8-VsO" id="3Gf-oh-LGC"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="SmalllSectionTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SmalllSectionTableViewCell" rowHeight="64" id="sBh-6f-Klc" customClass="SmalllSectionTableViewCell" customModule="Be_Daangn_iOS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="318.33333396911621" width="414" height="64"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="RecommendTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecommendTableViewCell" rowHeight="294" id="qTX-jT-Zyd" customClass="RecommendTableViewCell" customModule="Be_Daangn_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="241.33333396911621" width="414" height="294"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sBh-6f-Klc" id="u7l-We-Mf1">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qTX-jT-Zyd" id="xyw-gN-q8d">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="294"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJA-G4-dur">
-                                                    <rect key="frame" x="331" y="11" width="33" height="17"/>
-                                                    <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="12"/>
-                                                    <color key="textColor" red="0.57647061349999995" green="0.57647061349999995" blue="0.58039218189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recommendBackground" translatesAutoresizingMaskIntoConstraints="NO" id="VzT-kL-BBD">
+                                                    <rect key="frame" x="30" y="11" width="354" height="262"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="380" id="9KF-39-Ql1"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p8j-Br-pZA">
+                                                    <rect key="frame" x="50" y="21" width="314" height="193"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="193" id="n3a-nD-ZoV"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1D-W8-n5r">
+                                                    <rect key="frame" x="50" y="224" width="57" height="27.333333333333343"/>
+                                                    <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="20"/>
+                                                    <color key="textColor" red="0.40000003579999999" green="0.40000003579999999" blue="0.40000003579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NkE-QA-r3p">
+                                                    <rect key="frame" x="112" y="234" width="54" height="18"/>
+                                                    <fontDescription key="fontDescription" name="NotoSans-ExtraBold" family="Noto Sans" pointSize="13"/>
+                                                    <color key="textColor" red="0.69803923369999998" green="0.71372550729999995" blue="0.74901962280000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nw8-Is-6dt">
+                                                    <rect key="frame" x="50" y="261.33333333333331" width="240" height="20.666666666666686"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="240" id="0e8-Y8-dQG"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="NotoSans-ExtraBold" family="Noto Sans" pointSize="15"/>
+                                                    <color key="textColor" red="0.40000003579999999" green="0.40000003579999999" blue="0.40000003579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dJ-Qd-bfw">
+                                                    <rect key="frame" x="50" y="287" width="35.666666666666657" height="18"/>
+                                                    <fontDescription key="fontDescription" name="NotoSans-ExtraBold" family="Noto Sans" pointSize="13"/>
+                                                    <color key="textColor" red="0.99215686319999996" green="0.68235301969999995" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3w-KY-jVP">
+                                                    <rect key="frame" x="90.666666666666671" y="287" width="35.333333333333329" height="18"/>
+                                                    <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="13"/>
+                                                    <color key="textColor" red="0.57647061349999995" green="0.57647061349999995" blue="0.57647061349999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="BJA-G4-dur" secondAttribute="trailing" constant="30" id="PS7-bw-Lnc"/>
-                                                <constraint firstItem="BJA-G4-dur" firstAttribute="top" secondItem="u7l-We-Mf1" secondAttribute="topMargin" id="pq0-vc-hNi"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="p8j-Br-pZA" secondAttribute="trailing" constant="30" id="0qv-Be-GTP"/>
+                                                <constraint firstItem="nw8-Is-6dt" firstAttribute="top" secondItem="W1D-W8-n5r" secondAttribute="bottom" constant="10" id="1at-Qc-UaG"/>
+                                                <constraint firstItem="p8j-Br-pZA" firstAttribute="leading" secondItem="xyw-gN-q8d" secondAttribute="leadingMargin" constant="30" id="1f4-aU-FpM"/>
+                                                <constraint firstItem="VzT-kL-BBD" firstAttribute="leading" secondItem="xyw-gN-q8d" secondAttribute="leadingMargin" constant="10" id="4Cz-mr-0jg"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="VzT-kL-BBD" secondAttribute="bottom" constant="10" id="7RJ-bc-pgP"/>
+                                                <constraint firstItem="NkE-QA-r3p" firstAttribute="leading" secondItem="W1D-W8-n5r" secondAttribute="trailing" constant="5" id="Ed9-QM-gao"/>
+                                                <constraint firstItem="8dJ-Qd-bfw" firstAttribute="leading" secondItem="xyw-gN-q8d" secondAttribute="leadingMargin" constant="30" id="Fct-XX-hwa"/>
+                                                <constraint firstItem="W1D-W8-n5r" firstAttribute="top" secondItem="p8j-Br-pZA" secondAttribute="bottom" constant="10" id="Fpa-5E-UKw"/>
+                                                <constraint firstItem="p8j-Br-pZA" firstAttribute="top" secondItem="xyw-gN-q8d" secondAttribute="topMargin" constant="10" id="GA4-k0-DIE"/>
+                                                <constraint firstItem="NkE-QA-r3p" firstAttribute="top" secondItem="p8j-Br-pZA" secondAttribute="bottom" constant="20" id="Ghh-So-8Ku"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="VzT-kL-BBD" secondAttribute="trailing" constant="10" id="Hxz-l6-Y83"/>
+                                                <constraint firstItem="S3w-KY-jVP" firstAttribute="top" secondItem="nw8-Is-6dt" secondAttribute="bottom" constant="5" id="OQa-dP-KD5"/>
+                                                <constraint firstItem="VzT-kL-BBD" firstAttribute="top" secondItem="xyw-gN-q8d" secondAttribute="topMargin" id="ZaN-ct-Jgi"/>
+                                                <constraint firstItem="nw8-Is-6dt" firstAttribute="leading" secondItem="xyw-gN-q8d" secondAttribute="leadingMargin" constant="30" id="kMG-gm-NL5"/>
+                                                <constraint firstItem="8dJ-Qd-bfw" firstAttribute="top" secondItem="nw8-Is-6dt" secondAttribute="bottom" constant="5" id="ksv-Jf-kM1"/>
+                                                <constraint firstItem="W1D-W8-n5r" firstAttribute="leading" secondItem="xyw-gN-q8d" secondAttribute="leadingMargin" constant="30" id="kwu-ml-3C6"/>
+                                                <constraint firstItem="S3w-KY-jVP" firstAttribute="leading" secondItem="8dJ-Qd-bfw" secondAttribute="trailing" constant="5" id="roC-ZV-bZV"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="nameLabel" destination="BJA-G4-dur" id="dIh-ba-nl3"/>
+                                            <outlet property="customLabel" destination="8dJ-Qd-bfw" id="DcK-0x-tbx"/>
+                                            <outlet property="locationLabel" destination="NkE-QA-r3p" id="QO3-u2-N5x"/>
+                                            <outlet property="nameLabel" destination="W1D-W8-n5r" id="Yti-Oq-cmL"/>
+                                            <outlet property="recommendImage" destination="p8j-Br-pZA" id="qRk-CT-LHs"/>
+                                            <outlet property="reviewLabel" destination="S3w-KY-jVP" id="sds-eP-JHg"/>
+                                            <outlet property="subjectLabel" destination="nw8-Is-6dt" id="R6M-6z-s6Q"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -237,6 +323,7 @@
     <resources>
         <image name="buttonLayout" width="375" height="211"/>
         <image name="newsBackground" width="300" height="93"/>
+        <image name="recommendBackground" width="287" height="384"/>
         <image name="searchButton" width="304" height="52"/>
         <image name="tabBar" width="375" height="71"/>
         <systemColor name="systemBackgroundColor">
