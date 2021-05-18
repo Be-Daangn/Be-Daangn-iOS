@@ -16,9 +16,6 @@ struct RecommendStoreDataModel {
     var customer: String
     
     // Tag는 우선 Int Array로 만들어놓자 (0~6까지)
-    var tags: [Tag]?
+    var tags: [Int]?
 }
 
-struct Tag {
-    var tagNumber: Int
-}
