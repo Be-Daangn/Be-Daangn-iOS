@@ -105,6 +105,7 @@ extension HomeViewController : UITableViewDataSource, UITableViewDelegate{
         guard let SectionCell = tableView.dequeueReusableCell(withIdentifier: SectionTableViewCell.identifier) as? SectionTableViewCell else {return UITableViewCell() }
         guard let SmallSectionCell = tableView.dequeueReusableCell(withIdentifier: SmalllSectionTableViewCell.identifier) as? SmalllSectionTableViewCell else {return UITableViewCell() }
         guard let RecommendCell = tableView.dequeueReusableCell(withIdentifier: RecommendTableViewCell.identifier) as? RecommendTableViewCell else {return UITableViewCell() }
+        guard let RefreshCell = tableView.dequeueReusableCell(withIdentifier: RefreshTableViewCell.identifier) as? RefreshTableViewCell else {return UITableViewCell() }
         setRecommend()
         setSmallSectionData()
         setNewsData()
@@ -114,7 +115,9 @@ extension HomeViewController : UITableViewDataSource, UITableViewDelegate{
         SmallSectionCell.setData(name: smallSectionModel[indexPath.row].name)
         RecommendCell.setData(icon: recommendModel[indexPath.row].recommendImage, name: recommendModel[indexPath.row].name, location: recommendModel[indexPath.row].location, subject: recommendModel[indexPath.row].subject, review: recommendModel[indexPath.row].review, custom: recommendModel[indexPath.row].custom)
         RecommendCell.setLabel()
-        
+        if indexPath.row == 0{
+            return RefreshCell
+        }
         if indexPath.row == 1{
         return MainButtonCell
         }

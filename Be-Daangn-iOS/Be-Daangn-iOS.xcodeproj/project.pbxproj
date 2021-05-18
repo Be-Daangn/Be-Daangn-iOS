@@ -13,6 +13,7 @@
 		36C22B9D2653D057000B7DFD /* SectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22B9C2653D057000B7DFD /* SectionTableViewCell.swift */; };
 		36C22B9F2653D280000B7DFD /* SmalllSectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22B9E2653D280000B7DFD /* SmalllSectionTableViewCell.swift */; };
 		36C22BA12653F1AD000B7DFD /* RecommendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22BA02653F1AD000B7DFD /* RecommendTableViewCell.swift */; };
+		36CEEC0726541A330033CF55 /* RefreshTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CEEC0626541A330033CF55 /* RefreshTableViewCell.swift */; };
 		BD5B3512264FA67B006BA829 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5B3511264FA67B006BA829 /* AppDelegate.swift */; };
 		BD5B3514264FA67B006BA829 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5B3513264FA67B006BA829 /* SceneDelegate.swift */; };
 		BD5B351B264FA67C006BA829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD5B351A264FA67C006BA829 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		36C22B9C2653D057000B7DFD /* SectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableViewCell.swift; sourceTree = "<group>"; };
 		36C22B9E2653D280000B7DFD /* SmalllSectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmalllSectionTableViewCell.swift; sourceTree = "<group>"; };
 		36C22BA02653F1AD000B7DFD /* RecommendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendTableViewCell.swift; sourceTree = "<group>"; };
+		36CEEC0626541A330033CF55 /* RefreshTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTableViewCell.swift; sourceTree = "<group>"; };
 		92FC7324ABAB5E2A001F7EEA /* Pods-Be-Daangn-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Be-Daangn-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Be-Daangn-iOS/Pods-Be-Daangn-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BD5B350E264FA67B006BA829 /* Be-Daangn-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Be-Daangn-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD5B3511264FA67B006BA829 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -159,12 +161,6 @@
 			children = (
 				BD5B3531264FA7FE006BA829 /* HomeStoryboard.storyboard */,
 				BD5B3539264FA935006BA829 /* HomeViewController.swift */,
-				362C8723265271C600A2682D /* MainButtonTableViewCell.swift */,
-				362C87272652751C00A2682D /* NewsTableViewCell.swift */,
-				36C22B9C2653D057000B7DFD /* SectionTableViewCell.swift */,
-				36C22B9E2653D280000B7DFD /* SmalllSectionTableViewCell.swift */,
-				36C22BA02653F1AD000B7DFD /* RecommendTableViewCell.swift */,
-				3698F1932652D794007894B0 /* dummy.swift */,
 				BDA893B1264FF37E00903D2C /* Cell */,
 				BDA893BA264FF59000903D2C /* Service */,
 				BDA893BB264FF59B00903D2C /* Model */,
@@ -243,6 +239,12 @@
 		BDA893B1264FF37E00903D2C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				362C8723265271C600A2682D /* MainButtonTableViewCell.swift */,
+				362C87272652751C00A2682D /* NewsTableViewCell.swift */,
+				36C22B9C2653D057000B7DFD /* SectionTableViewCell.swift */,
+				36C22B9E2653D280000B7DFD /* SmalllSectionTableViewCell.swift */,
+				36C22BA02653F1AD000B7DFD /* RecommendTableViewCell.swift */,
+				36CEEC0626541A330033CF55 /* RefreshTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -285,6 +287,7 @@
 		BDA893BB264FF59B00903D2C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3698F1932652D794007894B0 /* dummy.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 				BD5B3548264FADD0006BA829 /* UIButton.swift in Sources */,
 				BD5B353E264FA95C006BA829 /* NewsViewController.swift in Sources */,
 				BDFF52E4264FBAF6000DDF06 /* UIColor.swift in Sources */,
+				36CEEC0726541A330033CF55 /* RefreshTableViewCell.swift in Sources */,
 				36C22B9F2653D280000B7DFD /* SmalllSectionTableViewCell.swift in Sources */,
 				BD5B3542264FACD5006BA829 /* Constants.swift in Sources */,
 				BD5B353A264FA935006BA829 /* HomeViewController.swift in Sources */,
