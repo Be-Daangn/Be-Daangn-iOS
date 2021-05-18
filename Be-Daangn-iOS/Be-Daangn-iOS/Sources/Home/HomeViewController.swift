@@ -18,6 +18,7 @@ class HomeViewController: BaseViewController {
     var sectionModel : [sectionDataModel] = []
     var smallSectionModel : [smallSectionDataModel] = []
     var recommendModel : [recommendDataModel] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setRound()
@@ -52,7 +53,12 @@ class HomeViewController: BaseViewController {
         searchView.layer.maskedCorners = CACornerMask(arrayLiteral: .layerMinXMaxYCorner,.layerMaxXMaxYCorner)
         
     }
-   
+    @IBAction func searchButtonClicked(_ sender: Any) {
+        print("버튼클릭")
+        guard let searchVC = storyboard?.instantiateViewController(identifier: "SearchViewController") as? SearchViewController else {return}
+        self.present(searchVC, animated: true, completion: nil)
+    }
+    
 }
 
 extension HomeViewController : UITableViewDataSource, UITableViewDelegate{
