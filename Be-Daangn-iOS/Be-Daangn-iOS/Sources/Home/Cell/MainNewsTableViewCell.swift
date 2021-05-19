@@ -7,9 +7,9 @@
 
 import UIKit
 
-class NewsTableViewCell: UITableViewCell {
+class MainNewsTableViewCell: UITableViewCell {
 
-    static let identifier : String = "NewsTableViewCell"
+    static let identifier : String = "MainNewsTableViewCell"
 
     @IBOutlet weak var newsImage: UIImageView!
     @IBOutlet weak var nameLable: UILabel!
