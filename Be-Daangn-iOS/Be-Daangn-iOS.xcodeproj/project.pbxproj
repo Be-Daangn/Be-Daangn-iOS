@@ -10,6 +10,9 @@
 
 		15DC4D482652BCCC00A33E53 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC4D472652BCCC00A33E53 /* NewsTableViewCell.swift */; };
 		15DC4D4A2652BF9B00A33E53 /* NewsListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC4D492652BF9B00A33E53 /* NewsListDataModel.swift */; };
+		BD1BB71F2653D87A00855013 /* BookmarkStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD1BB71E2653D87A00855013 /* BookmarkStoryboard.storyboard */; };
+		BD1BB7212653D88F00855013 /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1BB7202653D88F00855013 /* BookmarkViewController.swift */; };
+		BD1BB723265421BE00855013 /* UIViewController+presentAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1BB722265421BE00855013 /* UIViewController+presentAlert.swift */; };
 
 		362C8724265271C600A2682D /* MainButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362C8723265271C600A2682D /* MainButtonTableViewCell.swift */; };
 		362C87282652751C00A2682D /* MainNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362C87272652751C00A2682D /* MainNewsTableViewCell.swift */; };
@@ -55,6 +58,10 @@
 		3E60748CF1AEA45F13DEE4E9 /* Pods_Be_Daangn_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Be_Daangn_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44BE3F4189A27CC035D11C9F /* Pods-Be-Daangn-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Be-Daangn-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Be-Daangn-iOS/Pods-Be-Daangn-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		68B9411942642D2C77ED13EA /* Pods-Be-Daangn-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Be-Daangn-iOS.release.xcconfig"; path = "Target Support Files/Pods-Be-Daangn-iOS/Pods-Be-Daangn-iOS.release.xcconfig"; sourceTree = "<group>"; };
+
+		BD1BB71E2653D87A00855013 /* BookmarkStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BookmarkStoryboard.storyboard; sourceTree = "<group>"; };
+		BD1BB7202653D88F00855013 /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
+		BD1BB722265421BE00855013 /* UIViewController+presentAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+presentAlert.swift"; sourceTree = "<group>"; };
 
 		362C8723265271C600A2682D /* MainButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonTableViewCell.swift; sourceTree = "<group>"; };
 		362C87272652751C00A2682D /* MainNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNewsTableViewCell.swift; sourceTree = "<group>"; };
@@ -124,6 +131,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BD1BB71D2653D86300855013 /* Bookmark */ = {
+			isa = PBXGroup;
+			children = (
+				BD1BB71E2653D87A00855013 /* BookmarkStoryboard.storyboard */,
+				BD1BB7202653D88F00855013 /* BookmarkViewController.swift */,
+			);
+			path = Bookmark;
+			sourceTree = "<group>";
+		};
 		BD5B3505264FA67B006BA829 = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +191,7 @@
 				BD5B352E264FA75E006BA829 /* Home */,
 				BD5B352F264FA765006BA829 /* Recommend */,
 				BD5B3530264FA775006BA829 /* News */,
+				BD1BB71D2653D86300855013 /* Bookmark */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -250,6 +267,7 @@
 				BDFF52E3264FBAF6000DDF06 /* UIColor.swift */,
 				BDA893B6264FF51100903D2C /* UIView+.swift */,
 				BD9F52A526522E8E008E766E /* UIFont+.swift */,
+				BD1BB722265421BE00855013 /* UIViewController+presentAlert.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -397,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD9F52A426522E23008E766E /* NotoSans-ExtraBold.ttf in Resources */,
+				BD1BB71F2653D87A00855013 /* BookmarkStoryboard.storyboard in Resources */,
 				BD5EF44926529CE00025555C /* RecommendStoreCVC.xib in Resources */,
 				BD9F52A326522E23008E766E /* NotoSans-Bold.ttf in Resources */,
 				BD5B3536264FA813006BA829 /* NewsStoryboard.storyboard in Resources */,
@@ -460,6 +479,7 @@
 				BD5EF443265294C50025555C /* CornerButton.swift in Sources */,
 				BD9F52A626522E8E008E766E /* UIFont+.swift in Sources */,
 				BDA893B7264FF51100903D2C /* UIView+.swift in Sources */,
+				BD1BB7212653D88F00855013 /* BookmarkViewController.swift in Sources */,
 				362C87282652751C00A2682D /* MainNewsTableViewCell.swift in Sources */,
 				BD5B3512264FA67B006BA829 /* AppDelegate.swift in Sources */,
 				15DC4D4A2652BF9B00A33E53 /* NewsListDataModel.swift in Sources */,
@@ -472,6 +492,7 @@
 				BD5B3538264FA890006BA829 /* BaseViewController.swift in Sources */,
 				36C22B9D2653D057000B7DFD /* SectionTableViewCell.swift in Sources */,
 				BD5B3548264FADD0006BA829 /* UIButton.swift in Sources */,
+				BD1BB723265421BE00855013 /* UIViewController+presentAlert.swift in Sources */,
 				BD5B353E264FA95C006BA829 /* NewsViewController.swift in Sources */,
 				BD5EF44B2652A4030025555C /* RecommendStoreDataModel.swift in Sources */,
 				BDFF52E4264FBAF6000DDF06 /* UIColor.swift in Sources */,
