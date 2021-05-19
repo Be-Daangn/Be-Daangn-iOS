@@ -6,6 +6,7 @@
 	<array>
 		<string>NotoSans-Bold.ttf</string>
 		<string>NotoSans-ExtraBold.ttf</string>
+		<string>NotoSans-Medium.ttf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
