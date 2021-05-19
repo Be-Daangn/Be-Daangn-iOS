@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		362C8724265271C600A2682D /* MainButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362C8723265271C600A2682D /* MainButtonTableViewCell.swift */; };
-		362C87282652751C00A2682D /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362C87272652751C00A2682D /* NewsTableViewCell.swift */; };
+		362C87282652751C00A2682D /* MainNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362C87272652751C00A2682D /* MainNewsTableViewCell.swift */; };
 		3698F1942652D794007894B0 /* dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3698F1932652D794007894B0 /* dummy.swift */; };
 		36C22B9D2653D057000B7DFD /* SectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22B9C2653D057000B7DFD /* SectionTableViewCell.swift */; };
 		36C22B9F2653D280000B7DFD /* SmalllSectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C22B9E2653D280000B7DFD /* SmalllSectionTableViewCell.swift */; };
@@ -40,7 +40,7 @@
 
 /* Begin PBXFileReference section */
 		362C8723265271C600A2682D /* MainButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonTableViewCell.swift; sourceTree = "<group>"; };
-		362C87272652751C00A2682D /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		362C87272652751C00A2682D /* MainNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNewsTableViewCell.swift; sourceTree = "<group>"; };
 		3698F1932652D794007894B0 /* dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummy.swift; sourceTree = "<group>"; };
 		36C22B9C2653D057000B7DFD /* SectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableViewCell.swift; sourceTree = "<group>"; };
 		36C22B9E2653D280000B7DFD /* SmalllSectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmalllSectionTableViewCell.swift; sourceTree = "<group>"; };
@@ -243,7 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				362C8723265271C600A2682D /* MainButtonTableViewCell.swift */,
-				362C87272652751C00A2682D /* NewsTableViewCell.swift */,
+				362C87272652751C00A2682D /* MainNewsTableViewCell.swift */,
 				36C22B9C2653D057000B7DFD /* SectionTableViewCell.swift */,
 				36C22B9E2653D280000B7DFD /* SmalllSectionTableViewCell.swift */,
 				36C22BA02653F1AD000B7DFD /* RecommendTableViewCell.swift */,
@@ -429,7 +429,7 @@
 			files = (
 				BD9F52A626522E8E008E766E /* UIFont+.swift in Sources */,
 				BDA893B7264FF51100903D2C /* UIView+.swift in Sources */,
-				362C87282652751C00A2682D /* NewsTableViewCell.swift in Sources */,
+				362C87282652751C00A2682D /* MainNewsTableViewCell.swift in Sources */,
 				BD5B3512264FA67B006BA829 /* AppDelegate.swift in Sources */,
 				BD5B3544264FAD5A006BA829 /* SecretKey.swift in Sources */,
 				362C8724265271C600A2682D /* MainButtonTableViewCell.swift in Sources */,
