@@ -21,6 +21,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mc-ro-OOf">
                                 <rect key="frame" x="36" y="53" width="24" height="24"/>
                                 <state key="normal" backgroundImage="backButton"/>
+                                <connections>
+                                    <action selector="backButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="13w-Zg-t2r"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="저장됨" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sG-GS-bQC">
                                 <rect key="frame" x="39" y="105" width="71" height="33"/>
@@ -89,7 +92,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.6705882352941176" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="PSW-BV-0bi" secondAttribute="trailing" constant="39" id="1oy-cu-Cn4"/>
                             <constraint firstItem="DgW-Dh-Nve" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="3mD-iI-qGi"/>
@@ -101,7 +104,7 @@
                             <constraint firstItem="0sG-GS-bQC" firstAttribute="top" secondItem="2mc-ro-OOf" secondAttribute="bottom" constant="28" id="Veu-Do-eKx"/>
                             <constraint firstAttribute="bottom" secondItem="DgW-Dh-Nve" secondAttribute="bottom" id="ZC7-ad-2p1"/>
                             <constraint firstAttribute="trailing" secondItem="DgW-Dh-Nve" secondAttribute="trailing" id="dcO-NH-THg"/>
-                            <constraint firstItem="2mc-ro-OOf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="36" id="mRQ-Tl-fb1"/>
+                            <constraint firstItem="2mc-ro-OOf" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="36" id="mRQ-Tl-fb1"/>
                         </constraints>
                     </view>
                     <connections>

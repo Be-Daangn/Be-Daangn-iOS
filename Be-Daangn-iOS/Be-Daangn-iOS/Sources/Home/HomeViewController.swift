@@ -107,6 +107,17 @@ extension HomeViewController : UITableViewDataSource, UITableViewDelegate{
         return 10
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 6{
+            guard let newsVC = UIStoryboard(name: "NewsStoryboard", bundle: nil).instantiateViewController(identifier: "NewsViewController") as? NewsViewController else {return}
+            self.navigationController?.pushViewController(newsVC, animated: true)
+        }
+        if indexPath.row == 9 {
+        guard let recommendVC = UIStoryboard(name: "RecommendStoryboard", bundle: nil).instantiateViewController(identifier: "RecommendViewController") as? RecommendViewController else {return}
+        self.navigationController?.pushViewController(recommendVC, animated: true)
+    }
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let MainButtonCell = tableView.dequeueReusableCell(withIdentifier: MainButtonTableViewCell.identifier) as? MainButtonTableViewCell else {return UITableViewCell() }
         guard let NewsCell = tableView.dequeueReusableCell(withIdentifier: MainNewsTableViewCell.identifier) as? MainNewsTableViewCell else {return UITableViewCell() }
