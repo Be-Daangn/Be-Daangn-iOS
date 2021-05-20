@@ -42,26 +42,198 @@
                                         <state key="normal" image="bell" catalog="system"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NjS-TL-OzJ">
-                                        <rect key="frame" x="312" y="55" width="18" height="22"/>
+                                        <rect key="frame" x="312.5" y="55" width="17.5" height="22"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" image="pencil" catalog="system"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="소식" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPz-vY-g81">
-                                        <rect key="frame" x="32" y="105" width="47" height="33"/>
+                                        <rect key="frame" x="32" y="105" width="47" height="32.5"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="27"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Yks-93-ZbA">
+                                        <rect key="frame" x="37" y="160.5" width="171" height="24"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aY-iC-SsV" customClass="CornerButton" customModule="Be_Daangn_iOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="46" height="24"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="10" minY="3" maxX="10" maxY="3"/>
+                                                <state key="normal" title="신규">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="whw-km-zRd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLp-Q5-KKN" customClass="CornerButton" customModule="Be_Daangn_iOS" customModuleProvider="target">
+                                                <rect key="frame" x="56" y="0.0" width="46" height="24"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="10" minY="3" maxX="10" maxY="3"/>
+                                                <state key="normal" title="할인">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="smz-0K-lEM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwR-Ee-CZX" customClass="CornerButton" customModule="Be_Daangn_iOS" customModuleProvider="target">
+                                                <rect key="frame" x="112" y="0.0" width="59" height="24"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="10" minY="3" maxX="10" maxY="3"/>
+                                                <state key="normal" title="이벤트">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="AdE-Tj-ClV"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="gSH-6i-UiC"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="o5Q-tI-rQt">
+                                        <rect key="frame" x="37" y="198.5" width="296" height="24"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Zj-ep-zaY" customClass="CornerButton" customModule="Be_Daangn_iOS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="46" height="24"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="10" minY="3" maxX="10" maxY="3"/>
+                                                <state key="normal" title="카페">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="zoM-4v-O9E"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGf-ZL-6Nk" customClass="CornerButton" customModule="Be_Daangn_iOS" customModuleProvider="target">
+                                                <rect key="frame" x="56" y="0.0" width="46" height="24"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="10" minY="3" maxX="10" maxY="3"/>
+                                                <state key="normal" title="네일">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="clU-lG-h2Q"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0eX-fE-dly" customClass="CornerButton" customModule="Be_Daangn_iOS" customModuleProvider="target">
+                                                <rect key="frame" x="112" y="0.0" width="59" height="24"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="10" minY="3" maxX="10" maxY="3"/>
+                                                <state key="normal" title="강아지">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="4v9-Oa-wH8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hc-Hi-9TO" customClass="CornerButton" customModule="Be_Daangn_iOS" customModuleProvider="target">
+                                                <rect key="frame" x="181" y="0.0" width="59" height="24"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="10" minY="3" maxX="10" maxY="3"/>
+                                                <state key="normal" title="정수기">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="71W-BN-dtm"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwU-ab-kOa" customClass="CornerButton" customModule="Be_Daangn_iOS" customModuleProvider="target">
+                                                <rect key="frame" x="250" y="0.0" width="46" height="24"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="contentEdgeInsets" minX="10" minY="3" maxX="10" maxY="3"/>
+                                                <state key="normal" title="이사">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="S8C-q9-Eah"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="TzK-yd-Aeo"/>
+                                        </constraints>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.6705882352941176" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="NjS-TL-OzJ" firstAttribute="top" secondItem="imO-Qj-UBe" secondAttribute="top" constant="55" id="3iu-TG-Efr"/>
+                                    <constraint firstItem="o5Q-tI-rQt" firstAttribute="leading" secondItem="imO-Qj-UBe" secondAttribute="leading" constant="37" id="7WC-Fg-MVJ"/>
                                     <constraint firstItem="sAv-0c-AHe" firstAttribute="top" secondItem="imO-Qj-UBe" secondAttribute="top" constant="55" id="IRa-gE-UO6"/>
                                     <constraint firstAttribute="leading" secondItem="sAv-0c-AHe" secondAttribute="trailing" constant="-290" id="NuH-Md-8dP"/>
                                     <constraint firstItem="DA2-fA-A0A" firstAttribute="leading" secondItem="imO-Qj-UBe" secondAttribute="leading" constant="29" id="P9q-BI-29X"/>
                                     <constraint firstAttribute="height" constant="260" id="PK4-Qr-xGy"/>
+                                    <constraint firstItem="o5Q-tI-rQt" firstAttribute="top" secondItem="Yks-93-ZbA" secondAttribute="bottom" constant="14" id="Pt9-a0-JJw"/>
                                     <constraint firstItem="xPz-vY-g81" firstAttribute="top" secondItem="imO-Qj-UBe" secondAttribute="top" constant="105" id="Q6Z-40-2MS"/>
                                     <constraint firstItem="DA2-fA-A0A" firstAttribute="top" secondItem="imO-Qj-UBe" secondAttribute="top" constant="53" id="V4k-Rc-cGO"/>
+                                    <constraint firstItem="Yks-93-ZbA" firstAttribute="top" secondItem="xPz-vY-g81" secondAttribute="bottom" constant="23" id="i8o-y4-zW1"/>
+                                    <constraint firstItem="Yks-93-ZbA" firstAttribute="leading" secondItem="imO-Qj-UBe" secondAttribute="leading" constant="37" id="l4h-9W-2hY"/>
                                     <constraint firstAttribute="trailing" secondItem="NjS-TL-OzJ" secondAttribute="trailing" constant="45" id="pEK-5w-Fgy"/>
                                     <constraint firstItem="xPz-vY-g81" firstAttribute="leading" secondItem="imO-Qj-UBe" secondAttribute="leading" constant="32" id="uCD-HH-Fki"/>
                                 </constraints>
@@ -211,6 +383,14 @@
                         <outlet property="middleView" destination="tBW-IL-mad" id="bB0-1W-tXV"/>
                         <outlet property="newsLabel" destination="xPz-vY-g81" id="fqG-ky-4sA"/>
                         <outlet property="topView" destination="imO-Qj-UBe" id="VKU-2L-EQ8"/>
+                        <outletCollection property="button" destination="4aY-iC-SsV" collectionClass="NSMutableArray" id="Xlk-cm-plB"/>
+                        <outletCollection property="button" destination="pLp-Q5-KKN" collectionClass="NSMutableArray" id="cCa-8l-3ah"/>
+                        <outletCollection property="button" destination="nwR-Ee-CZX" collectionClass="NSMutableArray" id="mMq-om-9Vq"/>
+                        <outletCollection property="button" destination="3Zj-ep-zaY" collectionClass="NSMutableArray" id="ygC-cr-FQr"/>
+                        <outletCollection property="button" destination="JGf-ZL-6Nk" collectionClass="NSMutableArray" id="X9G-B5-4Nz"/>
+                        <outletCollection property="button" destination="0eX-fE-dly" collectionClass="NSMutableArray" id="Hqh-oc-7XN"/>
+                        <outletCollection property="button" destination="1hc-Hi-9TO" collectionClass="NSMutableArray" id="fbc-jE-pmL"/>
+                        <outletCollection property="button" destination="KwU-ab-kOa" collectionClass="NSMutableArray" id="JRd-Gj-cCM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

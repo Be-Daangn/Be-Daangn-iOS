@@ -13,6 +13,7 @@ class NewsViewController: BaseViewController {
     @IBOutlet weak var middleView: UIView!
     @IBOutlet weak var middleTableView: UITableView!
     @IBOutlet weak var newsLabel: UILabel!
+    @IBOutlet var button: [CornerButton]!
     
     var newsServiceList : [NewsListDataModel] = []
     
@@ -21,6 +22,7 @@ class NewsViewController: BaseViewController {
         setNewsServiceList()
         
         newsLabel.font = UIFont.NotoSans(.extraBold, size: 27)
+        
         
         middleTableView.delegate = self
         middleTableView.dataSource = self
@@ -55,6 +57,12 @@ class NewsViewController: BaseViewController {
         ])
     }
 
+    @IBAction func buttonClicked(_ sender: UIButton) {
+        
+        sender.isSelected = !sender.isSelected
+        setButtonColor(state: sender.isSelected, tag: sender.tag)
+        
+    }
     // 뒤로가는 버튼을 누르면
     @IBAction func backButtonClicked(_ sender: Any) {
         // 홈 뷰로 이동
@@ -90,4 +98,19 @@ extension NewsViewController : UITableViewDataSource {
     }
     
     
+}
+
+extension NewsViewController {
+    private func setButtonColor(state: Bool, tag: Int) {
+        // 눌렸을때
+        if state {
+            button[tag].backgroundColor = .white
+            button[tag].setTitleColor(.mainOrange, for: .selected)
+        }
+        // 안 눌렸을때
+        else {
+            button[tag].backgroundColor = .clear
+            button[tag].setTitleColor(.white, for: .normal)
+        }
+    }
 }
