@@ -9,6 +9,29 @@
 
 <br><br>
 
+## 📺 최종 구현 화면 (끝났다아아아아)
+
+
+### 🍎 박익범 (홈 뷰)
+- 🙋🏻‍♂️ 제자신의 부족함을 한번더 느끼고, 발전하는 기회가 되었습니다. 훌륭한 개발자가 되기위해 항상 노력하겠습니다. 같이 고생한 iOS파트원분들, 디자이너분들, 안드분들 모두 수고하셨습니다~!!~!
+
+	<img width="250" alt="home" src="https://user-images.githubusercontent.com/61109660/118929335-58660c00-b97f-11eb-9f34-8a7dc0b482c7.gif">
+
+### 🍎 김혜수 (소식 뷰)
+
+- 🙋🏻‍♂️ 더 발전하는 기회가 된 것 같습니다!
+
+	<img width="250" alt="news" src="https://user-images.githubusercontent.com/61109660/118929375-6582fb00-b97f-11eb-94dd-bbd629d35b7a.gif">
+
+### 🍎 김태현 (추천 가게 뷰, 저장됨 뷰)
+
+- 🙋🏻‍♂️ 짱짱맨들~~
+
+	<img width="250" alt="recommend" src="https://user-images.githubusercontent.com/61109660/118929416-73388080-b97f-11eb-8d27-32a1e987e7b9.gif">
+	<img width="250" alt="saved" src="https://user-images.githubusercontent.com/61109660/118929436-792e6180-b97f-11eb-8a09-0c2bfba31e41.gif">
+
+
+
 ## ⚙️ 개발 환경
 
 - iOS 13.0+
