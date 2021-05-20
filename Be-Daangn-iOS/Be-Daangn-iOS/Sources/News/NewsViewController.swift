@@ -70,7 +70,7 @@ class NewsViewController: BaseViewController {
     // 뒤로가는 버튼을 누르면
     @IBAction func backButtonClicked(_ sender: Any) {
         // 홈 뷰로 이동
-        
+        self.navigationController?.popViewController(animated: true)
     }
 }
 

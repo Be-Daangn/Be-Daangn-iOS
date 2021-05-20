@@ -22,6 +22,9 @@ class SavedViewController: BaseViewController {
         configureUI()
         makeDummyData()
     }
+    @IBAction func backButtonClicked(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
 
 extension SavedViewController {

@@ -35,7 +35,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.67058825489999996" blue="0.28627452250000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="1" green="0.6705882352941176" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="gh9-Y6-wrw" firstAttribute="leading" secondItem="QVe-BD-ZIl" secondAttribute="leading" constant="39" id="D6K-5t-vKO"/>
                                     <constraint firstItem="gh9-Y6-wrw" firstAttribute="top" secondItem="QVe-BD-ZIl" secondAttribute="top" constant="64" id="Rfz-UP-X8M"/>
@@ -69,7 +69,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.67058825489999996" blue="0.28627452250000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="1" green="0.6705882352941176" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="uax-AE-Hye" firstAttribute="leading" secondItem="JNZ-Nu-a6I" secondAttribute="leading" constant="41" id="SwX-bS-4ED"/>
                                     <constraint firstAttribute="width" secondItem="JNZ-Nu-a6I" secondAttribute="height" multiplier="380:150" id="eK8-Lx-Saa"/>
@@ -378,7 +378,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.67058825489999996" blue="0.28627452250000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="1" green="0.6705882352941176" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="V3l-3h-13u" secondAttribute="bottom" constant="60" id="4zh-RW-OTc"/>
                                     <constraint firstItem="cMB-bP-ePP" firstAttribute="leading" secondItem="EnK-xA-hkY" secondAttribute="trailing" constant="25" id="6TV-VF-6NN"/>

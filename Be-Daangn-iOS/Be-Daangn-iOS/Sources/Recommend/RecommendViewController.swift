@@ -76,14 +76,14 @@ class RecommendViewController: BaseViewController {
     
     /// 뒤로 가기 버튼 클릭 이벤트 ▶︎ PopViewController
     @IBAction func backButtonClicked(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
     
     /// 북마크 버튼 클릭 이벤트 ▶︎ 북마크(저장됨) 뷰로 화면전환
     @IBAction func bookmarkButtonClicked(_ sender: Any) {
         let savedStoryboard = UIStoryboard(name: "SavedStoryboard", bundle: nil)
         let savedVC = savedStoryboard.instantiateViewController(identifier: "SavedViewController") as! SavedViewController
-        savedVC.modalPresentationStyle = .overFullScreen
-        self.present(savedVC, animated: true, completion: nil)
+        self.navigationController?.pushViewController(savedVC, animated: true)
     }
     
     /// 글쓰기 버튼 클릭 이벤트
