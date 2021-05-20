@@ -26,6 +26,9 @@ class SavedItemCVC: UICollectionViewCell {
     // MARK: - Functions
     // UI Setup
     private func configureUI() {
+        // Layer
+        self.layer.cornerRadius = 14
+        
         // Font
         savedItemTitleLabel.font = UIFont.NotoSans(.extraBold, size: 13)
         savedItemPlaceLabel.font = UIFont.NotoSans(.bold, size: 9)
@@ -33,5 +36,16 @@ class SavedItemCVC: UICollectionViewCell {
         // Color
         savedItemTitleLabel.textColor = .subGray1
         savedItemPlaceLabel.textColor = .subGray3
+    }
+    
+    func setData(image: String,
+                 name: String,
+                 place: String) {
+        if let image = UIImage(named: image) {
+            self.savedItemImageView.image = image
+        }
+        
+        self.savedItemTitleLabel.text = name
+        self.savedItemPlaceLabel.text = place
     }
 }
