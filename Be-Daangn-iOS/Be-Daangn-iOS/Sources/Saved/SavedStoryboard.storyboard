@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,11 +15,99 @@
             <objects>
                 <viewController storyboardIdentifier="SavedViewController" id="Y6W-OH-hqX" customClass="SavedViewController" customModule="Be_Daangn_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mc-ro-OOf">
+                                <rect key="frame" x="36" y="53" width="24" height="24"/>
+                                <state key="normal" backgroundImage="backButton"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="저장됨" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sG-GS-bQC">
+                                <rect key="frame" x="39" y="105" width="71" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PSW-BV-0bi">
+                                <rect key="frame" x="38" y="183" width="298" height="484"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Hea-Rq-ryE">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jJf-Fs-ax6">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WEs-3u-7Hk">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DgW-Dh-Nve" userLabel="Tab Bar">
+                                <rect key="frame" x="0.0" y="596" width="375" height="71"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bpw-mV-tkt">
+                                        <rect key="frame" x="44" y="13" width="23" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="23" id="6UL-PL-zRo"/>
+                                            <constraint firstAttribute="width" constant="23" id="UQr-EM-xdN"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="recommendBottombarIcon1"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYY-JZ-kbA">
+                                        <rect key="frame" x="176" y="13" width="23" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="23" id="6LM-oN-PDV"/>
+                                            <constraint firstAttribute="height" constant="23" id="Abp-ot-9ii"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="recommendBottombarIcon2"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzr-Bs-D1F">
+                                        <rect key="frame" x="310" y="15" width="21" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="21" id="E8l-0y-uQj"/>
+                                            <constraint firstAttribute="height" constant="21" id="Gs0-I8-lVi"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="recommendBottombarIcon3"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Bpw-mV-tkt" secondAttribute="bottom" constant="35" id="B71-iA-xR7"/>
+                                    <constraint firstAttribute="bottom" secondItem="YYY-JZ-kbA" secondAttribute="bottom" constant="35" id="G38-2g-5mb"/>
+                                    <constraint firstAttribute="height" constant="71" id="Mlw-3U-wrS"/>
+                                    <constraint firstItem="YYY-JZ-kbA" firstAttribute="centerX" secondItem="DgW-Dh-Nve" secondAttribute="centerX" id="ZeW-Ua-Sav"/>
+                                    <constraint firstAttribute="trailing" secondItem="fzr-Bs-D1F" secondAttribute="trailing" constant="44" id="hDH-6V-xh4"/>
+                                    <constraint firstItem="Bpw-mV-tkt" firstAttribute="leading" secondItem="DgW-Dh-Nve" secondAttribute="leading" constant="44" id="u0d-qd-REb"/>
+                                    <constraint firstAttribute="bottom" secondItem="fzr-Bs-D1F" secondAttribute="bottom" constant="35" id="yZH-3O-xNs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="PSW-BV-0bi" secondAttribute="trailing" constant="39" id="1oy-cu-Cn4"/>
+                            <constraint firstItem="DgW-Dh-Nve" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="3mD-iI-qGi"/>
+                            <constraint firstItem="2mc-ro-OOf" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="53" id="4X8-sf-5ND"/>
+                            <constraint firstItem="0sG-GS-bQC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="39" id="5kN-QV-uhj"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="PSW-BV-0bi" secondAttribute="bottom" id="FYQ-8L-4nl"/>
+                            <constraint firstItem="PSW-BV-0bi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="38" id="Ofr-kq-ufT"/>
+                            <constraint firstItem="PSW-BV-0bi" firstAttribute="top" secondItem="0sG-GS-bQC" secondAttribute="bottom" constant="45" id="S9O-ua-aNq"/>
+                            <constraint firstItem="0sG-GS-bQC" firstAttribute="top" secondItem="2mc-ro-OOf" secondAttribute="bottom" constant="28" id="Veu-Do-eKx"/>
+                            <constraint firstAttribute="bottom" secondItem="DgW-Dh-Nve" secondAttribute="bottom" id="ZC7-ad-2p1"/>
+                            <constraint firstAttribute="trailing" secondItem="DgW-Dh-Nve" secondAttribute="trailing" id="dcO-NH-THg"/>
+                            <constraint firstItem="2mc-ro-OOf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="36" id="mRQ-Tl-fb1"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="PSW-BV-0bi" id="NNb-84-0me"/>
+                        <outlet property="savedTitleLabel" destination="0sG-GS-bQC" id="3TZ-n0-0w0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -26,6 +115,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="24" height="24"/>
+        <image name="recommendBottombarIcon1" width="23" height="23"/>
+        <image name="recommendBottombarIcon2" width="23" height="23"/>
+        <image name="recommendBottombarIcon3" width="21" height="21"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

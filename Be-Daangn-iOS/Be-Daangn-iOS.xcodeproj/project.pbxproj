@@ -20,6 +20,8 @@
 		BD1BB723265421BE00855013 /* UIViewController+presentAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1BB722265421BE00855013 /* UIViewController+presentAlert.swift */; };
 		BD30C85F2656170000099C02 /* SavedStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD30C85E2656170000099C02 /* SavedStoryboard.storyboard */; };
 		BD30C8612656171200099C02 /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD30C8602656171200099C02 /* SavedViewController.swift */; };
+		BD30C86926561C5A00099C02 /* SavedItemCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD30C86726561C5A00099C02 /* SavedItemCVC.swift */; };
+		BD30C86A26561C5A00099C02 /* SavedItemCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD30C86826561C5A00099C02 /* SavedItemCVC.xib */; };
 		BD5B3512264FA67B006BA829 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5B3511264FA67B006BA829 /* AppDelegate.swift */; };
 		BD5B3514264FA67B006BA829 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5B3513264FA67B006BA829 /* SceneDelegate.swift */; };
 		BD5B351B264FA67C006BA829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD5B351A264FA67C006BA829 /* Assets.xcassets */; };
@@ -65,6 +67,8 @@
 		BD1BB722265421BE00855013 /* UIViewController+presentAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+presentAlert.swift"; sourceTree = "<group>"; };
 		BD30C85E2656170000099C02 /* SavedStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SavedStoryboard.storyboard; sourceTree = "<group>"; };
 		BD30C8602656171200099C02 /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
+		BD30C86726561C5A00099C02 /* SavedItemCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedItemCVC.swift; sourceTree = "<group>"; };
+		BD30C86826561C5A00099C02 /* SavedItemCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SavedItemCVC.xib; sourceTree = "<group>"; };
 		BD5B350E264FA67B006BA829 /* Be-Daangn-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Be-Daangn-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD5B3511264FA67B006BA829 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD5B3513264FA67B006BA829 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,8 +132,18 @@
 			children = (
 				BD30C85E2656170000099C02 /* SavedStoryboard.storyboard */,
 				BD30C8602656171200099C02 /* SavedViewController.swift */,
+				BD30C86226561BED00099C02 /* Cell */,
 			);
 			path = Saved;
+			sourceTree = "<group>";
+		};
+		BD30C86226561BED00099C02 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BD30C86726561C5A00099C02 /* SavedItemCVC.swift */,
+				BD30C86826561C5A00099C02 /* SavedItemCVC.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		BD5B3505264FA67B006BA829 = {
@@ -406,6 +420,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD30C86A26561C5A00099C02 /* SavedItemCVC.xib in Resources */,
 				BD9F52A426522E23008E766E /* NotoSans-ExtraBold.ttf in Resources */,
 				BD5EF44926529CE00025555C /* RecommendStoreCVC.xib in Resources */,
 				BD9F52A326522E23008E766E /* NotoSans-Bold.ttf in Resources */,
@@ -471,6 +486,7 @@
 				BD5EF443265294C50025555C /* CornerButton.swift in Sources */,
 				BD9F52A626522E8E008E766E /* UIFont+.swift in Sources */,
 				BD30C8612656171200099C02 /* SavedViewController.swift in Sources */,
+				BD30C86926561C5A00099C02 /* SavedItemCVC.swift in Sources */,
 				BDA893B7264FF51100903D2C /* UIView+.swift in Sources */,
 				362C87282652751C00A2682D /* MainNewsTableViewCell.swift in Sources */,
 				BD5B3512264FA67B006BA829 /* AppDelegate.swift in Sources */,
