@@ -56,7 +56,9 @@ class HomeViewController: BaseViewController {
     @IBAction func searchButtonClicked(_ sender: Any) {
         print("버튼클릭")
         guard let searchVC = storyboard?.instantiateViewController(identifier: "SearchViewController") as? SearchViewController else {return}
-        self.present(searchVC, animated: true, completion: nil)
+        print(self.navigationController)
+//        self.present(searchVC, animated: true, completion: nil)
+        self.navigationController?.pushViewController(searchVC, animated: true)
     }
     
 }
