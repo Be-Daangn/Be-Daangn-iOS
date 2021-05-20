@@ -239,10 +239,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tBW-IL-mad">
-                                <rect key="frame" x="0.0" y="260" width="375" height="1168"/>
+                                <rect key="frame" x="0.0" y="260" width="375" height="1169"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j8M-Aj-SFw">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1168"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1169"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsTableViewCell" rowHeight="642" id="oEO-9R-U6h" customClass="NewsTableViewCell" customModule="Be_Daangn_iOS" customModuleProvider="target">
@@ -330,10 +330,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9aO-jN-yxx">
-                                <rect key="frame" x="0.0" y="1428" width="375" height="72"/>
+                                <rect key="frame" x="0.0" y="1429" width="375" height="71"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6X-ma-uOv">
-                                        <rect key="frame" x="44" y="14" width="23" height="23"/>
+                                        <rect key="frame" x="44" y="13" width="23" height="23"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="23" id="e0H-wN-NhF"/>
                                             <constraint firstAttribute="width" constant="23" id="gYP-oy-nib"/>
@@ -341,18 +341,18 @@
                                         <state key="normal" image="newsBottombarIcon1"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGm-HU-gY1">
-                                        <rect key="frame" x="176" y="14" width="23" height="23"/>
+                                        <rect key="frame" x="176" y="13" width="23" height="23"/>
                                         <state key="normal" image="newsBottombarIcon2"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqQ-TS-Ner">
-                                        <rect key="frame" x="306" y="15" width="21" height="22"/>
+                                        <rect key="frame" x="306" y="14" width="21" height="22"/>
                                         <state key="normal" image="newsBottombarIcon3"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="fqQ-TS-Ner" secondAttribute="trailing" constant="48" id="23Y-MB-7nO"/>
-                                    <constraint firstAttribute="height" constant="72" id="2Yl-Vd-XN1"/>
+                                    <constraint firstAttribute="height" constant="71" id="2Yl-Vd-XN1"/>
                                     <constraint firstAttribute="bottom" secondItem="fqQ-TS-Ner" secondAttribute="bottom" constant="35" id="3E3-KA-MQN"/>
                                     <constraint firstItem="H6X-ma-uOv" firstAttribute="leading" secondItem="9aO-jN-yxx" secondAttribute="leading" constant="44" id="B3e-tu-VfB"/>
                                     <constraint firstAttribute="bottom" secondItem="BGm-HU-gY1" secondAttribute="bottom" constant="35" id="OYU-LL-VhV"/>
