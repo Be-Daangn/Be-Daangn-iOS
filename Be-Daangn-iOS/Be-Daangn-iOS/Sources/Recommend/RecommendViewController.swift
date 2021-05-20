@@ -82,7 +82,7 @@ class RecommendViewController: BaseViewController {
     @IBAction func bookmarkButtonClicked(_ sender: Any) {
         let savedStoryboard = UIStoryboard(name: "SavedStoryboard", bundle: nil)
         let savedVC = savedStoryboard.instantiateViewController(identifier: "SavedViewController") as! SavedViewController
-//        bookmarkVC.modalPresentationStyle = .overFullScreen
+        savedVC.modalPresentationStyle = .overFullScreen
         self.present(savedVC, animated: true, completion: nil)
     }
     
