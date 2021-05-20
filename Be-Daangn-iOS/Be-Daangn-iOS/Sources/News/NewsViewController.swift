@@ -22,6 +22,10 @@ class NewsViewController: BaseViewController {
         setNewsServiceList()
         
         newsLabel.font = UIFont.NotoSans(.extraBold, size: 27)
+        for button in button {
+            button.titleLabel?.font = UIFont.NotoSans(.extraBold, size: 13)
+        }
+      
         
         
         middleTableView.delegate = self
