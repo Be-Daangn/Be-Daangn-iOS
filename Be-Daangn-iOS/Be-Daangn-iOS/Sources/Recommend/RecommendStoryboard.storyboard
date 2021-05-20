@@ -62,6 +62,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Rk-J6-pZX" customClass="CornerButton" customModule="Be_Daangn_iOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="46" height="24"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="contentEdgeInsets" minX="10" minY="3" maxX="10" maxY="3"/>
                                         <state key="normal" title="한식">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -74,9 +75,13 @@
                                                 <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tagButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="UTi-cG-mTe"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJk-Tv-26X" customClass="CornerButton" customModule="Be_Daangn_iOS" customModuleProvider="target">
                                         <rect key="frame" x="56" y="0.0" width="46" height="24"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="contentEdgeInsets" minX="10" minY="3" maxX="10" maxY="3"/>
                                         <state key="normal" title="일식">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -89,9 +94,13 @@
                                                 <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tagButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="wBR-yd-rTp"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rr0-Gu-a5q" customClass="CornerButton" customModule="Be_Daangn_iOS" customModuleProvider="target">
                                         <rect key="frame" x="112" y="0.0" width="46" height="24"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="contentEdgeInsets" minX="10" minY="3" maxX="10" maxY="3"/>
                                         <state key="normal" title="중식">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -104,9 +113,13 @@
                                                 <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tagButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9pm-mR-XUQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVA-Sb-Vac" customClass="CornerButton" customModule="Be_Daangn_iOS" customModuleProvider="target">
                                         <rect key="frame" x="168" y="0.0" width="46" height="24"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="contentEdgeInsets" minX="10" minY="3" maxX="10" maxY="3"/>
                                         <state key="normal" title="분식">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -119,6 +132,9 @@
                                                 <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tagButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="GkV-CA-Cxc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -130,6 +146,7 @@
                                 <subviews>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8wQ-cH-o79" customClass="CornerButton" customModule="Be_Daangn_iOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="25"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="contentEdgeInsets" minX="10" minY="3" maxX="8" maxY="4"/>
                                         <state key="normal" title="혼밥하기 좋은">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -142,9 +159,13 @@
                                                 <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tagButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="baN-RG-a0m"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQX-q9-sMy" customClass="CornerButton" customModule="Be_Daangn_iOS" customModuleProvider="target">
                                         <rect key="frame" x="108" y="0.0" width="89" height="25"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="contentEdgeInsets" minX="10" minY="3" maxX="10" maxY="4"/>
                                         <state key="normal" title="만원의 행복">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -157,9 +178,13 @@
                                                 <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tagButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="oyz-3l-2wH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnr-iY-1DQ" customClass="CornerButton" customModule="Be_Daangn_iOS" customModuleProvider="target">
                                         <rect key="frame" x="205" y="0.0" width="72" height="25"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="contentEdgeInsets" minX="10" minY="3" maxX="10" maxY="4"/>
                                         <state key="normal" title="맛집랭킹">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -172,6 +197,9 @@
                                                 <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tagButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="X41-ak-W9N"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -189,11 +217,11 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Taw-a3-XnR">
-                                <rect key="frame" x="0.0" y="609" width="375" height="58"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Taw-a3-XnR" userLabel="Tab Bar">
+                                <rect key="frame" x="0.0" y="596" width="375" height="71"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fk-1a-vW4">
-                                        <rect key="frame" x="44" y="0.0" width="23" height="23"/>
+                                        <rect key="frame" x="44" y="13" width="23" height="23"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="23" id="3Yh-Db-wus"/>
                                             <constraint firstAttribute="width" constant="23" id="LR1-gj-rxp"/>
@@ -201,7 +229,7 @@
                                         <state key="normal" backgroundImage="recommendBottombarIcon1"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQG-DW-zhD">
-                                        <rect key="frame" x="176" y="0.0" width="23" height="23"/>
+                                        <rect key="frame" x="176" y="13" width="23" height="23"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="23" id="TJr-Hu-nQV"/>
                                             <constraint firstAttribute="height" constant="23" id="t1h-3e-Ezy"/>
@@ -209,7 +237,7 @@
                                         <state key="normal" backgroundImage="recommendBottombarIcon2"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LuV-A8-X2S">
-                                        <rect key="frame" x="310" y="2" width="21" height="21"/>
+                                        <rect key="frame" x="310" y="15" width="21" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="21" id="Cd2-pD-nwW"/>
                                             <constraint firstAttribute="height" constant="21" id="rEt-h8-aeF"/>
@@ -219,18 +247,18 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="LuV-A8-X2S" secondAttribute="bottom" constant="35" id="IEZ-tK-tGn"/>
                                     <constraint firstItem="4fk-1a-vW4" firstAttribute="leading" secondItem="Taw-a3-XnR" secondAttribute="leading" constant="44" id="Nyf-5u-xOb"/>
                                     <constraint firstAttribute="trailing" secondItem="LuV-A8-X2S" secondAttribute="trailing" constant="44" id="OYd-nh-9yo"/>
-                                    <constraint firstItem="4fk-1a-vW4" firstAttribute="top" secondItem="Taw-a3-XnR" secondAttribute="top" id="OgA-H4-vB1"/>
-                                    <constraint firstItem="LuV-A8-X2S" firstAttribute="top" secondItem="Taw-a3-XnR" secondAttribute="top" constant="2" id="X4J-Du-pbC"/>
-                                    <constraint firstItem="sQG-DW-zhD" firstAttribute="top" secondItem="Taw-a3-XnR" secondAttribute="top" id="YMi-MX-e7S"/>
-                                    <constraint firstAttribute="height" constant="58" id="uEw-MU-Ufs"/>
+                                    <constraint firstAttribute="bottom" secondItem="4fk-1a-vW4" secondAttribute="bottom" constant="35" id="UmB-T5-z0M"/>
+                                    <constraint firstAttribute="bottom" secondItem="sQG-DW-zhD" secondAttribute="bottom" constant="35" id="doq-Mo-BAp"/>
+                                    <constraint firstAttribute="height" constant="71" id="uEw-MU-Ufs"/>
                                     <constraint firstItem="sQG-DW-zhD" firstAttribute="centerX" secondItem="Taw-a3-XnR" secondAttribute="centerX" id="ygo-Va-1Li"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" red="1" green="0.6705882352941176" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dvU-pK-h5t" secondAttribute="trailing" constant="37" id="2Co-z3-DQN"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Taw-a3-XnR" secondAttribute="trailing" id="2Sv-gl-LD9"/>

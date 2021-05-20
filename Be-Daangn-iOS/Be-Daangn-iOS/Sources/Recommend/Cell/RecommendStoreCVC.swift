@@ -14,6 +14,7 @@ class RecommendStoreCVC: UICollectionViewCell {
     @IBOutlet weak var storeNameLabel: UILabel!
     @IBOutlet weak var storeReviewLabel: UILabel!
     @IBOutlet weak var storeCustomerLabel: UILabel!
+    @IBOutlet weak var bookmarkButton: UIButton!
     
     // MARK: - Properties
     static let identifier = "RecommendStoreCVC"
