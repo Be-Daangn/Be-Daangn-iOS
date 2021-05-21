@@ -6,7 +6,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -31,25 +30,16 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PSW-BV-0bi">
-                                <rect key="frame" x="38" y="183" width="298" height="484"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PSW-BV-0bi">
+                                <rect key="frame" x="38" y="183" width="298" height="413"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Hea-Rq-ryE">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Hea-Rq-ryE">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jJf-Fs-ax6">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WEs-3u-7Hk">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DgW-Dh-Nve" userLabel="Tab Bar">
                                 <rect key="frame" x="0.0" y="596" width="375" height="71"/>
@@ -94,12 +84,12 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" red="1" green="0.6705882352941176" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="PSW-BV-0bi" secondAttribute="trailing" constant="39" id="1oy-cu-Cn4"/>
+                            <constraint firstAttribute="trailing" secondItem="PSW-BV-0bi" secondAttribute="trailing" constant="39" id="1oy-cu-Cn4"/>
                             <constraint firstItem="DgW-Dh-Nve" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="3mD-iI-qGi"/>
                             <constraint firstItem="2mc-ro-OOf" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="53" id="4X8-sf-5ND"/>
                             <constraint firstItem="0sG-GS-bQC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="39" id="5kN-QV-uhj"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="PSW-BV-0bi" secondAttribute="bottom" id="FYQ-8L-4nl"/>
-                            <constraint firstItem="PSW-BV-0bi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="38" id="Ofr-kq-ufT"/>
+                            <constraint firstItem="DgW-Dh-Nve" firstAttribute="top" secondItem="PSW-BV-0bi" secondAttribute="bottom" id="DIL-Xn-4Ct"/>
+                            <constraint firstItem="PSW-BV-0bi" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="38" id="Ofr-kq-ufT"/>
                             <constraint firstItem="PSW-BV-0bi" firstAttribute="top" secondItem="0sG-GS-bQC" secondAttribute="bottom" constant="45" id="S9O-ua-aNq"/>
                             <constraint firstItem="0sG-GS-bQC" firstAttribute="top" secondItem="2mc-ro-OOf" secondAttribute="bottom" constant="28" id="Veu-Do-eKx"/>
                             <constraint firstAttribute="bottom" secondItem="DgW-Dh-Nve" secondAttribute="bottom" id="ZC7-ad-2p1"/>
@@ -114,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="121"/>
+            <point key="canvasLocation" x="138.40000000000001" y="120.98950524737631"/>
         </scene>
     </scenes>
     <resources>
