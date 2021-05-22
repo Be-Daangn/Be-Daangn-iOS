@@ -221,7 +221,7 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.6705882352941176" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.6705882352941176" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="NjS-TL-OzJ" firstAttribute="top" secondItem="imO-Qj-UBe" secondAttribute="top" constant="55" id="3iu-TG-Efr"/>
                                     <constraint firstItem="o5Q-tI-rQt" firstAttribute="leading" secondItem="imO-Qj-UBe" secondAttribute="leading" constant="37" id="7WC-Fg-MVJ"/>
@@ -362,7 +362,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" red="1" green="0.6705882353" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.6705882352941176" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="tBW-IL-mad" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="9Et-DI-qlx"/>
                             <constraint firstItem="imO-Qj-UBe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Bng-4R-Um4"/>

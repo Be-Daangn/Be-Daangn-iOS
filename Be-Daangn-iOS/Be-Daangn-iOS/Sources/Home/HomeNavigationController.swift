@@ -1,17 +1,21 @@
+//
+//  HomeNavigationController.swift
+//  Be-Daangn-iOS
+//
+//  Created by 박익범 on 2021/05/19.
+//
+
 import UIKit
 
-class SearchViewController: UIViewController {
+class HomeNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationBar.isHidden = true
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func backButtonClicked(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
-    }
-    
+
     /*
     // MARK: - Navigation
 

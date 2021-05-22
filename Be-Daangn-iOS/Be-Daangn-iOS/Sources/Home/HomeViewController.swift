@@ -56,7 +56,9 @@ class HomeViewController: BaseViewController {
     @IBAction func searchButtonClicked(_ sender: Any) {
         print("버튼클릭")
         guard let searchVC = storyboard?.instantiateViewController(identifier: "SearchViewController") as? SearchViewController else {return}
-        self.present(searchVC, animated: true, completion: nil)
+        print(self.navigationController)
+//        self.present(searchVC, animated: true, completion: nil)
+        self.navigationController?.pushViewController(searchVC, animated: true)
     }
     
 }
@@ -103,6 +105,17 @@ extension HomeViewController : UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 6{
+            guard let newsVC = UIStoryboard(name: "NewsStoryboard", bundle: nil).instantiateViewController(identifier: "NewsViewController") as? NewsViewController else {return}
+            self.navigationController?.pushViewController(newsVC, animated: true)
+        }
+        if indexPath.row == 9 {
+        guard let recommendVC = UIStoryboard(name: "RecommendStoryboard", bundle: nil).instantiateViewController(identifier: "RecommendViewController") as? RecommendViewController else {return}
+        self.navigationController?.pushViewController(recommendVC, animated: true)
+    }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
