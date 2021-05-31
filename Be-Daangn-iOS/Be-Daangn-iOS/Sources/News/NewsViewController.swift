@@ -42,16 +42,16 @@ class NewsViewController: BaseViewController {
     func setNewsServiceList(){
         newsServiceList.append(contentsOf: [
             NewsListDataModel(imageName: "news1", title: "아인플라워 오픈 행사", address: "한남동", detail: """
-<<6월 1일 GRAND OPEN>>
-                              
-안녕하세요 당근님들!
-오픈 기념 이벤트 행사를 진행합니다!
+        <<6월 1일 GRAND OPEN>>
+                                      
+        안녕하세요 당근님들!
+        오픈 기념 이벤트 행사를 진행합니다!
 
-인스타그램 : aynflower
+        인스타그램 : aynflower
 
-카카오 플러스친구 : 아인플라워
+        카카오 플러스친구 : 아인플라워
 
-전화 : 070 4151 0488
+        전화 : 070 4151 0488
 """),
             NewsListDataModel(imageName: "news2", title: "인테리어 상담 서비스", address: "한남동", detail: """
 <<여름맞이 인테리어가 고민이라면?>>
