@@ -42,6 +42,7 @@
 		BD5EF44826529CE00025555C /* RecommendStoreCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5EF44626529CE00025555C /* RecommendStoreCVC.swift */; };
 		BD5EF44926529CE00025555C /* RecommendStoreCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD5EF44726529CE00025555C /* RecommendStoreCVC.xib */; };
 		BD5EF44B2652A4030025555C /* RecommendStoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5EF44A2652A4030025555C /* RecommendStoreDataModel.swift */; };
+		BD90F70726648E1E00050CB1 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD90F70626648E1E00050CB1 /* NetworkResult.swift */; };
 		BD9F52A326522E23008E766E /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD9F52A126522E23008E766E /* NotoSans-Bold.ttf */; };
 		BD9F52A426522E23008E766E /* NotoSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD9F52A226522E23008E766E /* NotoSans-ExtraBold.ttf */; };
 		BD9F52A626522E8E008E766E /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9F52A526522E8E008E766E /* UIFont+.swift */; };
@@ -92,6 +93,7 @@
 		BD5EF44626529CE00025555C /* RecommendStoreCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendStoreCVC.swift; sourceTree = "<group>"; };
 		BD5EF44726529CE00025555C /* RecommendStoreCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendStoreCVC.xib; sourceTree = "<group>"; };
 		BD5EF44A2652A4030025555C /* RecommendStoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendStoreDataModel.swift; sourceTree = "<group>"; };
+		BD90F70626648E1E00050CB1 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		BD9F52A126522E23008E766E /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
 		BD9F52A226522E23008E766E /* NotoSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-ExtraBold.ttf"; sourceTree = "<group>"; };
 		BD9F52A526522E8E008E766E /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
@@ -184,9 +186,10 @@
 			isa = PBXGroup;
 			children = (
 				BD5B3541264FACD5006BA829 /* Constants.swift */,
+				BD90F70526648DF200050CB1 /* Network */,
 				BD9F52A026522DB5008E766E /* Font */,
-				BDA893B0264FF32C00903D2C /* Base */,
 				BDA893AD264FF2F800903D2C /* Extension */,
+				BDA893B0264FF32C00903D2C /* Base */,
 				BDA893AB264FF2E200903D2C /* Secret */,
 				BDA893AA264FF2D300903D2C /* CommonClass */,
 			);
@@ -240,6 +243,14 @@
 				BDA893BD264FF5B600903D2C /* Model */,
 			);
 			path = News;
+			sourceTree = "<group>";
+		};
+		BD90F70526648DF200050CB1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BD90F70626648E1E00050CB1 /* NetworkResult.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		BD9F52A026522DB5008E766E /* Font */ = {
@@ -510,6 +521,7 @@
 				BDFF52E4264FBAF6000DDF06 /* UIColor.swift in Sources */,
 				36CEEC0926541FC70033CF55 /* SearchViewController.swift in Sources */,
 				36CEEC0726541A330033CF55 /* RefreshTableViewCell.swift in Sources */,
+				BD90F70726648E1E00050CB1 /* NetworkResult.swift in Sources */,
 				36C22B9F2653D280000B7DFD /* SmalllSectionTableViewCell.swift in Sources */,
 				BD5B3542264FACD5006BA829 /* Constants.swift in Sources */,
 				BD5B353A264FA935006BA829 /* HomeViewController.swift in Sources */,
