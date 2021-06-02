@@ -33,18 +33,28 @@ class HomeViewController: BaseViewController {
     
     //MARK: 데이터 설정 함수
     func setSectionData(){
-        sectionModel.append(contentsOf: [sectionDataModel(name: "소식"), sectionDataModel(name: "추천 가게")])
+        sectionModel.append(contentsOf: [sectionDataModel(name: "소식"),
+                                         sectionDataModel(name: "추천 가게")])
     }
     
     func setSmallSectionData(){
-        smallSectionModel.append(contentsOf: [smallSectionDataModel(name: "소식 전체보기 >"), smallSectionDataModel(name: "추천 가게 전체보기 >")])
+        smallSectionModel.append(contentsOf: [smallSectionDataModel(name: "소식 전체보기 >"),
+                                              smallSectionDataModel(name: "추천 가게 전체보기 >")])
     }
 
     func setNewsData(){
-        newsModel.append(contentsOf: [newsDataModel(Newsimage: "news1", name: "아인플라워오픈행사", subname: "아인플라워", location: "한남동"), newsDataModel(Newsimage: "news2", name: "인테리어상담서비스", subname: "제일인테리어", location: "한남동"), newsDataModel(Newsimage: "news3", name: "시즌 디저트 개시", subname: "아워즈카페", location: "한남동") ])
+        newsModel.append(contentsOf: [newsDataModel(Newsimage: "news1",
+                                                    name: "아인플라워오픈행사",
+                                                    subname: "아인플라워",
+                                                    location: "한남동"), newsDataModel(Newsimage: "news2", name: "인테리어상담서비스", subname: "제일인테리어", location: "한남동"), newsDataModel(Newsimage: "news3", name: "시즌 디저트 개시", subname: "아워즈카페", location: "한남동") ])
     }
     func setRecommend(){
-        recommendModel.append(contentsOf: [recommendDataModel(recommendImage: "home2_recommend", name: "다운타우너", location: "한남동", subject: "안녕하세요 한남동의 수제버거 전문점인 다운타우너입니다.", custom: "후기 89", review: "단골 31")])
+        recommendModel.append(contentsOf: [recommendDataModel(recommendImage: "home2_recommend",
+                                                              name: "다운타우너",
+                                                              location: "한남동",
+                                                              subject: "안녕하세요 한남동의 수제버거 전문점인 다운타우너입니다.",
+                                                              custom: "후기 89",
+                                                              review: "단골 31")])
     }
     //MARK: 뷰 모서리 곡선화 함수
     func setRound(){
@@ -59,7 +69,8 @@ class HomeViewController: BaseViewController {
     //MARK: 서치뷰로 푸시하는 함수
     @IBAction func searchButtonClicked(_ sender: Any) {
         print("버튼클릭")
-        guard let searchVC = storyboard?.instantiateViewController(identifier: "SearchViewController") as? SearchViewController else {return}
+        guard let searchVC = storyboard?.instantiateViewController(identifier: "SearchViewController")
+                as? SearchViewController else {return}
         print(self.navigationController)
 //        self.present(searchVC, animated: true, completion: nil)
         self.navigationController?.pushViewController(searchVC, animated: true)
@@ -73,7 +84,8 @@ extension HomeViewController : UITableViewDataSource, UITableViewDelegate{
         return 1
         
     }
-    
+
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 0{ //새로고침부분
             return 140

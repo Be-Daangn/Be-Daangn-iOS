@@ -145,7 +145,6 @@ extension RecommendViewController {
         
         filterTags = dummyDataList
     }
-    
 }
 
 // MARK: - CollectionView Delegate
@@ -196,5 +195,5 @@ extension RecommendViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets.init(top: 43, left: 41, bottom: 70, right: 41)
     }
-    
 }
+

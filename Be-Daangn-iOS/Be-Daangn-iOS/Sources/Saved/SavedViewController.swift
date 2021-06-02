@@ -82,11 +82,14 @@ extension SavedViewController: UICollectionViewDataSource {
 extension SavedViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let screenSize = UIScreen.main.bounds.width
-        let widthSize = screenSize * (139 / 375)
-        let heightSize = screenSize * (161 / 375)
+        let screenWidth = UIScreen.main.bounds.width
+        
+        let cellWidth = screenWidth * (139 / 375)
+        let cellHeight = cellWidth * (161 / 139)
+        
+        print(screenWidth, cellWidth, cellHeight)
 
-        return CGSize(width: widthSize, height: heightSize)
+        return CGSize(width: cellWidth, height: cellHeight)
     }
 
     // 라인 간격
@@ -96,12 +99,12 @@ extension SavedViewController: UICollectionViewDelegateFlowLayout {
     
     // 아이템 간격
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 20
+        let screenWidth = UIScreen.main.bounds.width
+        return screenWidth * (20/375)
     }
 
     // 컬렉션뷰 여백 (padding)
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets.zero
     }
-    
 }
