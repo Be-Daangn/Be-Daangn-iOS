@@ -8,6 +8,7 @@
 import UIKit
 
 class HomeViewController: BaseViewController {
+    //MARK: 뷰 및 데이터 선언
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var searchView: UIView!
     @IBOutlet weak var homeTableView: UITableView!
@@ -21,14 +22,16 @@ class HomeViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setRound()
+        setRound() //헤더뷰 및 서치뷰 모서리 둥글게
         homeTableView.delegate = self
         homeTableView.dataSource = self
         homeTableView.separatorStyle = .none
-        self.view.sendSubviewToBack(searchView)
+        self.view.sendSubviewToBack(searchView) //뷰끼리 우선순위 조정
         self.view.sendSubviewToBack(homeTableView)
         // code
     }
+    
+    //MARK: 데이터 설정 함수
     func setSectionData(){
         sectionModel.append(contentsOf: [sectionDataModel(name: "소식"), sectionDataModel(name: "추천 가게")])
     }
@@ -43,7 +46,7 @@ class HomeViewController: BaseViewController {
     func setRecommend(){
         recommendModel.append(contentsOf: [recommendDataModel(recommendImage: "home2_recommend", name: "다운타우너", location: "한남동", subject: "안녕하세요 한남동의 수제버거 전문점인 다운타우너입니다.", custom: "후기 89", review: "단골 31")])
     }
-    
+    //MARK: 뷰 모서리 곡선화 함수
     func setRound(){
         headerView.clipsToBounds = true
         headerView.layer.cornerRadius = 20
@@ -53,6 +56,7 @@ class HomeViewController: BaseViewController {
         searchView.layer.maskedCorners = CACornerMask(arrayLiteral: .layerMinXMaxYCorner,.layerMaxXMaxYCorner)
         
     }
+    //MARK: 서치뷰로 푸시하는 함수
     @IBAction func searchButtonClicked(_ sender: Any) {
         print("버튼클릭")
         guard let searchVC = storyboard?.instantiateViewController(identifier: "SearchViewController") as? SearchViewController else {return}
@@ -71,38 +75,38 @@ extension HomeViewController : UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.row == 0{
+        if indexPath.row == 0{ //새로고침부분
             return 140
         }
-        if indexPath.row == 2{
+        if indexPath.row == 2{ //소식
             return 50
         }
         
-        if indexPath.row == 3{
+        if indexPath.row == 3{ //소식 CEll 1
             return 110
         }
-        if indexPath.row == 4{
+        if indexPath.row == 4{//소식 CEll 2
             return 110
         }
-        if indexPath.row == 5{
+        if indexPath.row == 5{//소식 CEll 3
             return 110
         }
-        if indexPath.row == 6{
+        if indexPath.row == 6{ //소식 전체보기
             return 50
         }
-        if indexPath.row == 7{
+        if indexPath.row == 7{ // 추천가게
             return 105
         }
-        if indexPath.row == 8{
+        if indexPath.row == 8{ // 추천가게 Cell
             return 390
         }
-        if indexPath.row == 9{
+        if indexPath.row == 9{ // 추천가게 전체보기
             return 50
         }
-        return 210
+        return 210 //버튼셀
         
     }
-    
+    //MARK: 테이블뷰 셀 구현부분
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
