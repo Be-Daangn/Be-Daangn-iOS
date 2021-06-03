@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class NewsViewController: BaseViewController {
     
@@ -71,6 +72,9 @@ class NewsViewController: BaseViewController {
                             for newsData in newsDataListR {
                                 print("ㅎㅎ", newsData)
                                 let info = newsData.info.replacingOccurrences(of: "\\n", with: "\n")
+                                
+                                
+            
                                 self.newsServiceList.append(contentsOf: [
                                     News(id: newsData.id,
                                                              titleIdx: newsData.titleIdx,
