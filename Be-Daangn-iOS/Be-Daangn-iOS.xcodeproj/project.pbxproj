@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1585FBE92668D57D00C9858D /* GetNewsListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1585FBE82668D57D00C9858D /* GetNewsListService.swift */; };
-		1585FBED266968A100C9858D /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1585FBEC266968A100C9858D /* UIImageView+.swift */; };
 		15DC4D482652BCCC00A33E53 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC4D472652BCCC00A33E53 /* NewsTableViewCell.swift */; };
 		15DC4D4A2652BF9B00A33E53 /* NewsListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC4D492652BF9B00A33E53 /* NewsListDataModel.swift */; };
 		362C8724265271C600A2682D /* MainButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362C8723265271C600A2682D /* MainButtonTableViewCell.swift */; };
@@ -56,7 +55,6 @@
 
 /* Begin PBXFileReference section */
 		1585FBE82668D57D00C9858D /* GetNewsListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNewsListService.swift; sourceTree = "<group>"; };
-		1585FBEC266968A100C9858D /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
 		15DC4D472652BCCC00A33E53 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		15DC4D492652BF9B00A33E53 /* NewsListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListDataModel.swift; sourceTree = "<group>"; };
 		362C8723265271C600A2682D /* MainButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonTableViewCell.swift; sourceTree = "<group>"; };
@@ -292,7 +290,6 @@
 				BDA893B6264FF51100903D2C /* UIView+.swift */,
 				BD9F52A526522E8E008E766E /* UIFont+.swift */,
 				BD1BB722265421BE00855013 /* UIViewController+presentAlert.swift */,
-				1585FBEC266968A100C9858D /* UIImageView+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -515,7 +512,6 @@
 				362C8724265271C600A2682D /* MainButtonTableViewCell.swift in Sources */,
 				3698F1942652D794007894B0 /* dummy.swift in Sources */,
 				BD5B3514264FA67B006BA829 /* SceneDelegate.swift in Sources */,
-				1585FBED266968A100C9858D /* UIImageView+.swift in Sources */,
 				BD5B3546264FADB3006BA829 /* Device.swift in Sources */,
 				36C22BA12653F1AD000B7DFD /* RecommendTableViewCell.swift in Sources */,
 				BD5B3538264FA890006BA829 /* BaseViewController.swift in Sources */,

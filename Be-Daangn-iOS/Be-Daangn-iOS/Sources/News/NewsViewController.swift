@@ -43,7 +43,7 @@ class NewsViewController: BaseViewController {
 
     
     func setNewsServiceList(){
-        print("머가그리문제야")
+      
         GetNewsListService.shared.getNews { (response) in
                     switch(response){
                     
