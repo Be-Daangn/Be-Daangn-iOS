@@ -40,37 +40,18 @@ class NewsViewController: BaseViewController {
         // code
     }
     
-//    func setNewsServiceList(){
-//        newsServiceList.append(contentsOf: [
-//            NewsListDataModel(imageName: "news1", title: "아인플라워 오픈 행사", address: "한남동", detail: """
-//        <<6월 1일 GRAND OPEN>>
-//
-//        안녕하세요 당근님들!
-//        오픈 기념 이벤트 행사를 진행합니다!
-//
-//        인스타그램 : aynflower
-//
-//        카카오 플러스친구 : 아인플라워
-//
-//        전화 : 070 4151 0488
-//"""),
-//            NewsListDataModel(imageName: "news2", title: "인테리어 상담 서비스", address: "한남동", detail: """
-//<<여름맞이 인테리어가 고민이라면?>>
-//
-//안녕하세요!
-//""")
-//        ])
-//    }
+
     
     func setNewsServiceList(){
+        print("머가그리문제야")
         GetNewsListService.shared.getNews { (response) in
                     switch(response){
                     
                     case .success(let newsDataList):
-                        print("실행대나")
+                        
                         if let newsDataListR = newsDataList as? [News] {
                             for newsData in newsDataListR {
-                                print("ㅎㅎ", newsData)
+                                
                                 let info = newsData.info.replacingOccurrences(of: "\\n", with: "\n")
                                 
                                 
@@ -84,21 +65,7 @@ class NewsViewController: BaseViewController {
                                                                           ])
                                 self.middleTableView.reloadData()
                                 
-//                                if let data = newsData as? News   {
-//                                    print("여기 실행안됨,,")
-//                                    self.newsServiceList.append(contentsOf: [
-//                                        News(id: data.id,
-//                                                                 titleIdx: data.titleIdx,
-//                                                                 title: data.title,
-//                                                                 image: data.image,
-//                                                                 event: data.event, place: data.place, info: data.info, v: data.v)
-//                                                                              ])
-//                                    self.middleTableView.reloadData()
-//
-//                                }
-//                                else {
-//                                    print("여기네")
-//                                }
+
                             
                         }
                             
@@ -143,7 +110,7 @@ extension NewsViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         tableView.estimatedRowHeight = 500
         return UITableView.automaticDimension
-        //return 700
+        
     }
     
 }
@@ -164,8 +131,6 @@ extension NewsViewController : UITableViewDataSource {
                          address: newsServiceList[indexPath.row].place,
                          detail: newsServiceList[indexPath.row].info)
         
-//        newsCell.setData(imageName: newsServiceList[indexPath.row].imageName,
-//                         title: newsServiceList[indexPath.row].title, address: newsServiceList[indexPath.row].address, detail: newsServiceList[indexPath.row].detail)
 
         return newsCell
         

@@ -92,19 +92,10 @@ struct GetNewsListService{
         guard let decodeData = try? decoder.decode(NewsListDataModel.self, from: data)
         else { return .pathErr }
         
-        // decodeData.data를.. 잘.. 가공해봅시다..
-        print("성공햇니")
-        print("여기가잘못되었을까..?",decodeData.data[0])
         
-        for counts in decodeData.data {
-            print("몇번나와?", counts)
-            dataList.append(counts)
-        }
-        
-        print("후하", dataList)
         
         // 성공하면 success
         return .success(decodeData.data)
-        // 얘가 List로 리턴되니까.. 어케하지..
+        
     }
 }

@@ -40,9 +40,7 @@ class NewsTableViewCell: UITableViewCell {
     
     func setData(imageName: String, title: String, address: String, detail: String){
         
-//        if let image = UIImage(named: imageName) {
-//            newsImageView.image = image
-//        }
+
         let url = URL(string: imageName)
 
 
