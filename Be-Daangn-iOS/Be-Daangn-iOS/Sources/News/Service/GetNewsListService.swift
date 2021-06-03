@@ -86,7 +86,7 @@ struct GetNewsListService{
         
         // JSON데이터 해독
         let decoder = JSONDecoder()
-        var dataList : [News] = []
+        
         
         // Decode하는 중... -> 실해파면 pathErr
         guard let decodeData = try? decoder.decode(NewsListDataModel.self, from: data)
