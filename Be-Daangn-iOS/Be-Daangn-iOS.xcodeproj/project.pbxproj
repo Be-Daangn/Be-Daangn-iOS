@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1585FBE92668D57D00C9858D /* GetNewsListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1585FBE82668D57D00C9858D /* GetNewsListService.swift */; };
 		15DC4D482652BCCC00A33E53 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC4D472652BCCC00A33E53 /* NewsTableViewCell.swift */; };
 		15DC4D4A2652BF9B00A33E53 /* NewsListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC4D492652BF9B00A33E53 /* NewsListDataModel.swift */; };
 		362C8724265271C600A2682D /* MainButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362C8723265271C600A2682D /* MainButtonTableViewCell.swift */; };
@@ -53,6 +54,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1585FBE82668D57D00C9858D /* GetNewsListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNewsListService.swift; sourceTree = "<group>"; };
 		15DC4D472652BCCC00A33E53 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		15DC4D492652BF9B00A33E53 /* NewsListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListDataModel.swift; sourceTree = "<group>"; };
 		362C8723265271C600A2682D /* MainButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonTableViewCell.swift; sourceTree = "<group>"; };
@@ -363,6 +365,7 @@
 		BDA893BC264FF5AE00903D2C /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				1585FBE82668D57D00C9858D /* GetNewsListService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -526,6 +529,7 @@
 				BD5B3542264FACD5006BA829 /* Constants.swift in Sources */,
 				BD5B353A264FA935006BA829 /* HomeViewController.swift in Sources */,
 				15DC4D482652BCCC00A33E53 /* NewsTableViewCell.swift in Sources */,
+				1585FBE92668D57D00C9858D /* GetNewsListService.swift in Sources */,
 				BD5EF44826529CE00025555C /* RecommendStoreCVC.swift in Sources */,
 				BD5B353C264FA942006BA829 /* RecommendViewController.swift in Sources */,
 			);
