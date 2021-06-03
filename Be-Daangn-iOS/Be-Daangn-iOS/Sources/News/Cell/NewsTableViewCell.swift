@@ -35,7 +35,10 @@ class NewsTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    
+    
     func setData(imageName: String, title: String, address: String, detail: String){
+        
         if let image = UIImage(named: imageName) {
             newsImageView.image = image
         }
@@ -43,6 +46,7 @@ class NewsTableViewCell: UITableViewCell {
         newsTitleLabel.text = title
         newsAddressLabel.text = address
         newsDetailLabel.text = detail
+        
     }
 
 }
