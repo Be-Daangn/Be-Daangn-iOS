@@ -7,6 +7,8 @@
 
 import UIKit
 
+import Kingfisher
+
 class SavedItemCVC: UICollectionViewCell {
     
     // MARK: - IBOutlets
@@ -41,8 +43,8 @@ class SavedItemCVC: UICollectionViewCell {
     func setData(image: String,
                  name: String,
                  place: String) {
-        if let image = UIImage(named: image) {
-            self.savedItemImageView.image = image
+        if let imageURL = URL(string: image) {
+            self.savedItemImageView.kf.setImage(with: imageURL)
         }
         
         self.savedItemTitleLabel.text = name

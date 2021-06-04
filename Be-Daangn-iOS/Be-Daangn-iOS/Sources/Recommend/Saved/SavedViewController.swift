@@ -14,13 +14,13 @@ class SavedViewController: BaseViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     // MARK: - Properties
-    
+    var recommendData: [RecommendData] = []
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
-        
+        print(recommendData)
     }
     @IBAction func backButtonClicked(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
@@ -28,6 +28,7 @@ class SavedViewController: BaseViewController {
 }
 
 extension SavedViewController {
+    
     // UI 셋업 함수
     private func configureUI() {
         setupCollectionView()
@@ -55,13 +56,18 @@ extension SavedViewController: UICollectionViewDelegate {}
 // MARK: - UICollectionViewDataSource
 extension SavedViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return recommendData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SavedItemCVC.identifier, for: indexPath) as? SavedItemCVC else { return UICollectionViewCell() }
         
+        let recommendData = self.recommendData[indexPath.row]
+        
+        cell.setData(image: recommendData.image,
+                     name: recommendData.title,
+                     place: recommendData.place)
         
         return cell
     }
@@ -75,8 +81,6 @@ extension SavedViewController: UICollectionViewDelegateFlowLayout {
         
         let cellWidth = screenWidth * (139 / 375)
         let cellHeight = cellWidth * (161 / 139)
-        
-        print(screenWidth, cellWidth, cellHeight)
 
         return CGSize(width: cellWidth, height: cellHeight)
     }

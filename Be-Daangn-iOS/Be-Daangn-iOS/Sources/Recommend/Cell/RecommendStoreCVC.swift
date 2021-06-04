@@ -7,6 +7,8 @@
 
 import UIKit
 
+import Kingfisher
+
 class RecommendStoreCVC: UICollectionViewCell {
     
     // MARK: - IBOutlets
@@ -42,8 +44,9 @@ class RecommendStoreCVC: UICollectionViewCell {
                  name: String,
                  review: String,
                  customer: String) {
-        if let image = UIImage(named: image) {
-            self.storeImageView.image = image
+        
+        if let imageURL = URL(string: image) {
+            self.storeImageView.kf.setImage(with: imageURL)
         }
         
         self.storeNameLabel.text = name
