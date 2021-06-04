@@ -31,6 +31,12 @@ class SavedItemCVC: UICollectionViewCell {
         // Layer
         self.layer.cornerRadius = 14
         
+        savedItemImageView.layer.applyShadow(color: .black,
+                                         alpha: 0.25,
+                                         x: 0,
+                                         y: 4,
+                                         blur: 4)
+        
         // Font
         savedItemTitleLabel.font = UIFont.NotoSans(.extraBold, size: 13)
         savedItemPlaceLabel.font = UIFont.NotoSans(.bold, size: 9)
@@ -44,7 +50,8 @@ class SavedItemCVC: UICollectionViewCell {
                  name: String,
                  place: String) {
         if let imageURL = URL(string: image) {
-            self.savedItemImageView.kf.setImage(with: imageURL)
+            let processor = RoundCornerImageProcessor(cornerRadius: 20)
+            self.savedItemImageView.kf.setImage(with: imageURL, options: [.processor(processor)])
         }
         
         self.savedItemTitleLabel.text = name

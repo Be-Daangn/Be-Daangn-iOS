@@ -50,6 +50,7 @@
 		BD9F52A626522E8E008E766E /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9F52A526522E8E008E766E /* UIFont+.swift */; };
 		BDA893B7264FF51100903D2C /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA893B6264FF51100903D2C /* UIView+.swift */; };
 		BDB4C7422669D91500A10893 /* RecommendDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB4C7412669D91500A10893 /* RecommendDataService.swift */; };
+		BDB4C7472669E3ED00A10893 /* CALayer + Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB4C7462669E3ED00A10893 /* CALayer + Shadow.swift */; };
 		BDCC0F13265368E20070BEAF /* NotoSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDCC0F12265368E20070BEAF /* NotoSans-Medium.ttf */; };
 		BDFF52E4264FBAF6000DDF06 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFF52E3264FBAF6000DDF06 /* UIColor.swift */; };
 /* End PBXBuildFile section */
@@ -102,6 +103,7 @@
 		BD9F52A526522E8E008E766E /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 		BDA893B6264FF51100903D2C /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		BDB4C7412669D91500A10893 /* RecommendDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendDataService.swift; sourceTree = "<group>"; };
+		BDB4C7462669E3ED00A10893 /* CALayer + Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer + Shadow.swift"; sourceTree = "<group>"; };
 		BDCC0F12265368E20070BEAF /* NotoSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Medium.ttf"; sourceTree = "<group>"; };
 		BDFF52E3264FBAF6000DDF06 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,8 +132,8 @@
 		BD1BB71D2653D86300855013 /* Saved */ = {
 			isa = PBXGroup;
 			children = (
-				BD30C85E2656170000099C02 /* SavedStoryboard.storyboard */,
 				BD30C8602656171200099C02 /* SavedViewController.swift */,
+				BD30C85E2656170000099C02 /* SavedStoryboard.storyboard */,
 				BD30C86226561BED00099C02 /* Cell */,
 			);
 			path = Saved;
@@ -221,10 +223,10 @@
 			children = (
 				BD5B3533264FA809006BA829 /* RecommendStoryboard.storyboard */,
 				BD5B353B264FA942006BA829 /* RecommendViewController.swift */,
-				BD1BB71D2653D86300855013 /* Saved */,
 				BDA893B2264FF38500903D2C /* Cell */,
 				BDB4C7432669D91A00A10893 /* Service */,
 				BDA893B8264FF57100903D2C /* Model */,
+				BD1BB71D2653D86300855013 /* Saved */,
 			);
 			path = Recommend;
 			sourceTree = "<group>";
@@ -284,6 +286,7 @@
 				BDA893B6264FF51100903D2C /* UIView+.swift */,
 				BD9F52A526522E8E008E766E /* UIFont+.swift */,
 				BD1BB722265421BE00855013 /* UIViewController+presentAlert.swift */,
+				BDB4C7462669E3ED00A10893 /* CALayer + Shadow.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -534,6 +537,7 @@
 				BD5B353A264FA935006BA829 /* HomeViewController.swift in Sources */,
 				15DC4D482652BCCC00A33E53 /* NewsTableViewCell.swift in Sources */,
 				1585FBE92668D57D00C9858D /* GetNewsListService.swift in Sources */,
+				BDB4C7472669E3ED00A10893 /* CALayer + Shadow.swift in Sources */,
 				BD5EF44826529CE00025555C /* RecommendStoreCVC.swift in Sources */,
 				BD5B353C264FA942006BA829 /* RecommendViewController.swift in Sources */,
 			);
