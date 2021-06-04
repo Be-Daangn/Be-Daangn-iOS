@@ -196,7 +196,6 @@
 				BD5B352E264FA75E006BA829 /* Home */,
 				BD5B352F264FA765006BA829 /* Recommend */,
 				BD5B3530264FA775006BA829 /* News */,
-				BD1BB71D2653D86300855013 /* Saved */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -218,6 +217,7 @@
 		BD5B352F264FA765006BA829 /* Recommend */ = {
 			isa = PBXGroup;
 			children = (
+				BD1BB71D2653D86300855013 /* Saved */,
 				BD5B3533264FA809006BA829 /* RecommendStoryboard.storyboard */,
 				BD5B353B264FA942006BA829 /* RecommendViewController.swift */,
 				BDA893B2264FF38500903D2C /* Cell */,
