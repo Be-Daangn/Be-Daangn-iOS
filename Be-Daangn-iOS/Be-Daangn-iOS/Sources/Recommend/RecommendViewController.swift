@@ -17,19 +17,7 @@ class RecommendViewController: BaseViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     // MARK: - Properties
-    var dummyDataList: [RecommendStoreDataModel] = [
-        RecommendStoreDataModel(imageName: "recommend_1", name: "다운타우너", review: "89", customer: "31", tags: [0, 1]),
-        RecommendStoreDataModel(imageName: "recommend_2", name: "오복수산", review: "75", customer: "24", tags: [1, 6]),
-        RecommendStoreDataModel(imageName: "recommend_3", name: "파이프그라운드", review: "66", customer: "18", tags: [2, 4]),
-        RecommendStoreDataModel(imageName: "recommend_1", name: "다운타우너", review: "89", customer: "31", tags: [0, 1]),
-        RecommendStoreDataModel(imageName: "recommend_2", name: "오복수산", review: "75", customer: "24", tags: [1, 6]),
-        RecommendStoreDataModel(imageName: "recommend_3", name: "파이프그라운드", review: "66", customer: "18", tags: [2, 4]),
-        RecommendStoreDataModel(imageName: "recommend_1", name: "다운타우너", review: "89", customer: "31", tags: [0, 1]),
-        RecommendStoreDataModel(imageName: "recommend_2", name: "오복수산", review: "75", customer: "24", tags: [1, 6]),
-        RecommendStoreDataModel(imageName: "recommend_3", name: "파이프그라운드", review: "66", customer: "18", tags: [2, 4]),
-    ]
-    
-    var filterTags: [RecommendStoreDataModel] = []
+
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -143,7 +131,6 @@ extension RecommendViewController {
         
         collectionView.register(UINib(nibName: RecommendStoreCVC.identifier, bundle: nil), forCellWithReuseIdentifier: RecommendStoreCVC.identifier)
         
-        filterTags = dummyDataList
     }
 }
 
@@ -153,7 +140,7 @@ extension RecommendViewController: UICollectionViewDelegate {}
 // MARK: - CollectionView DataSource
 extension RecommendViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return filterTags.count
+        return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -161,12 +148,6 @@ extension RecommendViewController: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RecommendStoreCVC.identifier,
                                                             for: indexPath) as? RecommendStoreCVC else { return UICollectionViewCell() }
         
-        let dummyData = filterTags[indexPath.row]
-
-        cell.setData(image: dummyData.imageName,
-                     name: dummyData.name,
-                     review: dummyData.review,
-                     customer: dummyData.customer)
 
         
         return cell
