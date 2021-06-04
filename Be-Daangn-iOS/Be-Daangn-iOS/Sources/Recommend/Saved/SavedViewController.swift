@@ -14,13 +14,13 @@ class SavedViewController: BaseViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     // MARK: - Properties
-    var dummyDataList: [RecommendStoreDataModel] = []
+    var recommendData: [RecommendData] = []
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
-        makeDummyData()
+        print(recommendData)
     }
     @IBAction func backButtonClicked(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
@@ -28,6 +28,7 @@ class SavedViewController: BaseViewController {
 }
 
 extension SavedViewController {
+    
     // UI 셋업 함수
     private func configureUI() {
         setupCollectionView()
@@ -46,16 +47,7 @@ extension SavedViewController {
         collectionView.backgroundColor = .clear
     }
     
-    private func makeDummyData() {
-        dummyDataList.append(contentsOf: [
-            RecommendStoreDataModel(imageName: "saved1", name: "다운타우너", place: "한남동", review: "89", customer: "31", tags: [0, 1]),
-            RecommendStoreDataModel(imageName: "saved2", name: "일호식", place: "한남동", review: "75", customer: "24", tags: [1, 6]),
-            RecommendStoreDataModel(imageName: "saved3", name: "파이프그라운드", place: "연남동", review: "66", customer: "18", tags: [2, 4]),
-            RecommendStoreDataModel(imageName: "saved4", name: "다운타우너", place: "삼전동", review: "89", customer: "31", tags: [0, 1]),
-            RecommendStoreDataModel(imageName: "saved5", name: "오복수산", place: "삼성동", review: "75", customer: "24", tags: [1, 6]),
-            RecommendStoreDataModel(imageName: "saved6", name: "파이프그라운드", place: "상도동", review: "66", customer: "18", tags: [2, 4]),
-        ])
-    }
+
 }
 
 // MARK: - UICollectionViewDelegate
@@ -64,15 +56,18 @@ extension SavedViewController: UICollectionViewDelegate {}
 // MARK: - UICollectionViewDataSource
 extension SavedViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dummyDataList.count
+        return recommendData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SavedItemCVC.identifier, for: indexPath) as? SavedItemCVC else { return UICollectionViewCell() }
         
-        let savedItem = dummyDataList[indexPath.row]
-        cell.setData(image: savedItem.imageName, name: savedItem.name, place: savedItem.place)
+        let recommendData = self.recommendData[indexPath.row]
+        
+        cell.setData(image: recommendData.image,
+                     name: recommendData.title,
+                     place: recommendData.place)
         
         return cell
     }
@@ -86,8 +81,6 @@ extension SavedViewController: UICollectionViewDelegateFlowLayout {
         
         let cellWidth = screenWidth * (139 / 375)
         let cellHeight = cellWidth * (161 / 139)
-        
-        print(screenWidth, cellWidth, cellHeight)
 
         return CGSize(width: cellWidth, height: cellHeight)
     }
