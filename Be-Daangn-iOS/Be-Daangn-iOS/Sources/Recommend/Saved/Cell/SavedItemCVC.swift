@@ -7,6 +7,8 @@
 
 import UIKit
 
+import Kingfisher
+
 class SavedItemCVC: UICollectionViewCell {
     
     // MARK: - IBOutlets
@@ -29,6 +31,12 @@ class SavedItemCVC: UICollectionViewCell {
         // Layer
         self.layer.cornerRadius = 14
         
+        savedItemImageView.layer.applyShadow(color: .black,
+                                         alpha: 0.25,
+                                         x: 0,
+                                         y: 4,
+                                         blur: 4)
+        
         // Font
         savedItemTitleLabel.font = UIFont.NotoSans(.extraBold, size: 13)
         savedItemPlaceLabel.font = UIFont.NotoSans(.bold, size: 9)
@@ -41,8 +49,9 @@ class SavedItemCVC: UICollectionViewCell {
     func setData(image: String,
                  name: String,
                  place: String) {
-        if let image = UIImage(named: image) {
-            self.savedItemImageView.image = image
+        if let imageURL = URL(string: image) {
+            let processor = RoundCornerImageProcessor(cornerRadius: 20)
+            self.savedItemImageView.kf.setImage(with: imageURL, options: [.processor(processor)])
         }
         
         self.savedItemTitleLabel.text = name
