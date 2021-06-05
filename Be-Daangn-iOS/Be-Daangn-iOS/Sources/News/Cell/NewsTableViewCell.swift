@@ -28,6 +28,7 @@ class NewsTableViewCell: UITableViewCell {
         newsTitleLabel.font = UIFont.NotoSans(.bold, size: 20)
         newsAddressLabel.font = UIFont.NotoSans(.extraBold, size: 12)
         newsDetailLabel.font = UIFont.NotoSans(.medium, size: 14)
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -42,7 +43,11 @@ class NewsTableViewCell: UITableViewCell {
         
 
         let url = URL(string: imageName)
-
+       
+//        if let imageURL = URL(string: imageName) {
+//            let processor = RoundCornerImageProcessor(cornerRadius: 50)
+//            newsImageView.kf.setImage(with: imageURL, options: [.processor(processor)])
+//        }
 
         newsImageView.kf.setImage(with: url)
         newsTitleLabel.text = title
