@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class NewsTableViewCell: UITableViewCell {
     
@@ -35,14 +36,19 @@ class NewsTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    
+    
     func setData(imageName: String, title: String, address: String, detail: String){
-        if let image = UIImage(named: imageName) {
-            newsImageView.image = image
-        }
         
+
+        let url = URL(string: imageName)
+
+
+        newsImageView.kf.setImage(with: url)
         newsTitleLabel.text = title
         newsAddressLabel.text = address
         newsDetailLabel.text = detail
+        
     }
 
 }

@@ -17,24 +17,13 @@ class RecommendViewController: BaseViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     // MARK: - Properties
-    var dummyDataList: [RecommendStoreDataModel] = [
-        RecommendStoreDataModel(imageName: "recommend_1", name: "다운타우너", review: "89", customer: "31", tags: [0, 1]),
-        RecommendStoreDataModel(imageName: "recommend_2", name: "오복수산", review: "75", customer: "24", tags: [1, 6]),
-        RecommendStoreDataModel(imageName: "recommend_3", name: "파이프그라운드", review: "66", customer: "18", tags: [2, 4]),
-        RecommendStoreDataModel(imageName: "recommend_1", name: "다운타우너", review: "89", customer: "31", tags: [0, 1]),
-        RecommendStoreDataModel(imageName: "recommend_2", name: "오복수산", review: "75", customer: "24", tags: [1, 6]),
-        RecommendStoreDataModel(imageName: "recommend_3", name: "파이프그라운드", review: "66", customer: "18", tags: [2, 4]),
-        RecommendStoreDataModel(imageName: "recommend_1", name: "다운타우너", review: "89", customer: "31", tags: [0, 1]),
-        RecommendStoreDataModel(imageName: "recommend_2", name: "오복수산", review: "75", customer: "24", tags: [1, 6]),
-        RecommendStoreDataModel(imageName: "recommend_3", name: "파이프그라운드", review: "66", customer: "18", tags: [2, 4]),
-    ]
-    
-    var filterTags: [RecommendStoreDataModel] = []
+    var recommendData: [RecommendData] = []
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        fetchData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -49,29 +38,6 @@ class RecommendViewController: BaseViewController {
     @IBAction func tagButtonClicked(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
         setButtonColor(state: sender.isSelected, tag: sender.tag)
-        
-        // 1. 선택된 태그가 몇 번인지 걸러주기
-        let selectedTags = TagButtonCollection
-            .filter { $0.isSelected }
-            .map { $0.tag }
-        
-        // 2. 선택된 태그와 겹치는 태그가 있는 모델만 걸러주기
-        filterTags = dummyDataList
-            .filter({ data in
-                // 1. 포함되는 태그가 하나만 있어도 되는지
-                //Array(Set(data.tags!).intersection(Set(selectedTags))) != []
-                // 2. 태그를 전부 다 포함하는 경우를 걸러야 하는지
-                Set(selectedTags).isSubset(of: Set(data.tags!))
-            })
-        
-        // 3. 선택된 태그가 없을 때는 전체 목록 다 표시해야 함
-        if selectedTags == [] {
-            filterTags = dummyDataList
-        }
-        
-        // 컬렉션뷰 리로드
-        // - 리로드 해줘야 에러 안남
-        collectionView.reloadData()
     }
     
     /// 뒤로 가기 버튼 클릭 이벤트 ▶︎ PopViewController
@@ -83,6 +49,7 @@ class RecommendViewController: BaseViewController {
     @IBAction func bookmarkButtonClicked(_ sender: Any) {
         let savedStoryboard = UIStoryboard(name: "SavedStoryboard", bundle: nil)
         let savedVC = savedStoryboard.instantiateViewController(identifier: "SavedViewController") as! SavedViewController
+        savedVC.recommendData = self.recommendData
         self.navigationController?.pushViewController(savedVC, animated: true)
     }
     
@@ -97,9 +64,27 @@ class RecommendViewController: BaseViewController {
 // IBAction 제외한 함수들의 세팅은 여기서 하도록 함
 extension RecommendViewController {
     
-    @objc func bookmarkButtonClicked(sender: UIButton) {
-        print(sender.tag)
+    func fetchData() {
+        RecommendDataService.shared.getRecommendData { response in
+            switch response {
+            case .success(let data):
+                if let response = data as? RecommendDataModel, let data = response.data {
+                    self.recommendData = data
+                    // 반드시 컬렉션뷰 리로드
+                    self.collectionView.reloadData()
+                }
+            case .requestErr(let message):
+                print(message)
+            case .networkFail:
+                print("networkFail")
+            case .serverErr:
+                print("serverErr")
+            case .pathErr:
+                print("pathErr")
+            }
+        }
     }
+
     
     private func setButtonColor(state: Bool, tag: Int) {
         // 눌렸을때
@@ -143,7 +128,6 @@ extension RecommendViewController {
         
         collectionView.register(UINib(nibName: RecommendStoreCVC.identifier, bundle: nil), forCellWithReuseIdentifier: RecommendStoreCVC.identifier)
         
-        filterTags = dummyDataList
     }
 }
 
@@ -153,7 +137,7 @@ extension RecommendViewController: UICollectionViewDelegate {}
 // MARK: - CollectionView DataSource
 extension RecommendViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return filterTags.count
+        return recommendData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -161,13 +145,12 @@ extension RecommendViewController: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RecommendStoreCVC.identifier,
                                                             for: indexPath) as? RecommendStoreCVC else { return UICollectionViewCell() }
         
-        let dummyData = filterTags[indexPath.row]
-
-        cell.setData(image: dummyData.imageName,
-                     name: dummyData.name,
-                     review: dummyData.review,
-                     customer: dummyData.customer)
-
+        let recommendData = self.recommendData[indexPath.row]
+        
+        cell.setData(image: recommendData.image,
+                     name: recommendData.title,
+                     review: String(recommendData.review),
+                     customer: String(recommendData.customer))
         
         return cell
     }

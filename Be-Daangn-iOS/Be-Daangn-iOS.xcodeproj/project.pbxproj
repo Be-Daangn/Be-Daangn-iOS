@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1585FBE92668D57D00C9858D /* GetNewsListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1585FBE82668D57D00C9858D /* GetNewsListService.swift */; };
 		15DC4D482652BCCC00A33E53 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC4D472652BCCC00A33E53 /* NewsTableViewCell.swift */; };
 		15DC4D4A2652BF9B00A33E53 /* NewsListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC4D492652BF9B00A33E53 /* NewsListDataModel.swift */; };
+		200E6483495A5E97320624C5 /* Pods_Be_Daangn_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52ADD4ECFCED3AA785669107 /* Pods_Be_Daangn_iOS.framework */; };
 		362C8724265271C600A2682D /* MainButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362C8723265271C600A2682D /* MainButtonTableViewCell.swift */; };
 		362C87282652751C00A2682D /* MainNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362C87272652751C00A2682D /* MainNewsTableViewCell.swift */; };
 		36394F71265501AD00A17B64 /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36394F70265501AD00A17B64 /* HomeNavigationController.swift */; };
@@ -48,14 +50,17 @@
 		BD9F52A426522E23008E766E /* NotoSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD9F52A226522E23008E766E /* NotoSans-ExtraBold.ttf */; };
 		BD9F52A626522E8E008E766E /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9F52A526522E8E008E766E /* UIFont+.swift */; };
 		BDA893B7264FF51100903D2C /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA893B6264FF51100903D2C /* UIView+.swift */; };
+		BDB4C7422669D91500A10893 /* RecommendDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB4C7412669D91500A10893 /* RecommendDataService.swift */; };
+		BDB4C7472669E3ED00A10893 /* CALayer + Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB4C7462669E3ED00A10893 /* CALayer + Shadow.swift */; };
 		BDCC0F13265368E20070BEAF /* NotoSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDCC0F12265368E20070BEAF /* NotoSans-Medium.ttf */; };
 		BDFF52E4264FBAF6000DDF06 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFF52E3264FBAF6000DDF06 /* UIColor.swift */; };
-		F01D7CBD1BE5647C58CC400B /* Pods_Be_Daangn_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E60748CF1AEA45F13DEE4E9 /* Pods_Be_Daangn_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1585FBE82668D57D00C9858D /* GetNewsListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetNewsListService.swift; sourceTree = "<group>"; };
 		15DC4D472652BCCC00A33E53 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		15DC4D492652BF9B00A33E53 /* NewsListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListDataModel.swift; sourceTree = "<group>"; };
+		1BCAD1E7B067AB94F7852CC1 /* Pods-Be-Daangn-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Be-Daangn-iOS.release.xcconfig"; path = "Target Support Files/Pods-Be-Daangn-iOS/Pods-Be-Daangn-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		362C8723265271C600A2682D /* MainButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonTableViewCell.swift; sourceTree = "<group>"; };
 		362C87272652751C00A2682D /* MainNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNewsTableViewCell.swift; sourceTree = "<group>"; };
 		36394F70265501AD00A17B64 /* HomeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
@@ -66,9 +71,8 @@
 		36C22BA02653F1AD000B7DFD /* RecommendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendTableViewCell.swift; sourceTree = "<group>"; };
 		36CEEC0626541A330033CF55 /* RefreshTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTableViewCell.swift; sourceTree = "<group>"; };
 		36CEEC0826541FC70033CF55 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		3E60748CF1AEA45F13DEE4E9 /* Pods_Be_Daangn_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Be_Daangn_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		44BE3F4189A27CC035D11C9F /* Pods-Be-Daangn-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Be-Daangn-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Be-Daangn-iOS/Pods-Be-Daangn-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		68B9411942642D2C77ED13EA /* Pods-Be-Daangn-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Be-Daangn-iOS.release.xcconfig"; path = "Target Support Files/Pods-Be-Daangn-iOS/Pods-Be-Daangn-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		52ADD4ECFCED3AA785669107 /* Pods_Be_Daangn_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Be_Daangn_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D45BD33D9B0E62F2841EB32 /* Pods-Be-Daangn-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Be-Daangn-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Be-Daangn-iOS/Pods-Be-Daangn-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		BD1BB722265421BE00855013 /* UIViewController+presentAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+presentAlert.swift"; sourceTree = "<group>"; };
 		BD30C85E2656170000099C02 /* SavedStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SavedStoryboard.storyboard; sourceTree = "<group>"; };
 		BD30C8602656171200099C02 /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 		BD9F52A226522E23008E766E /* NotoSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-ExtraBold.ttf"; sourceTree = "<group>"; };
 		BD9F52A526522E8E008E766E /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 		BDA893B6264FF51100903D2C /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		BDB4C7412669D91500A10893 /* RecommendDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendDataService.swift; sourceTree = "<group>"; };
+		BDB4C7462669E3ED00A10893 /* CALayer + Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer + Shadow.swift"; sourceTree = "<group>"; };
 		BDCC0F12265368E20070BEAF /* NotoSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Medium.ttf"; sourceTree = "<group>"; };
 		BDFF52E3264FBAF6000DDF06 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,26 +115,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F01D7CBD1BE5647C58CC400B /* Pods_Be_Daangn_iOS.framework in Frameworks */,
+				200E6483495A5E97320624C5 /* Pods_Be_Daangn_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		25D4F1C2AF4C421EA1226966 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3E60748CF1AEA45F13DEE4E9 /* Pods_Be_Daangn_iOS.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		8594E437613548A1BAF990D1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				44BE3F4189A27CC035D11C9F /* Pods-Be-Daangn-iOS.debug.xcconfig */,
-				68B9411942642D2C77ED13EA /* Pods-Be-Daangn-iOS.release.xcconfig */,
+				9D45BD33D9B0E62F2841EB32 /* Pods-Be-Daangn-iOS.debug.xcconfig */,
+				1BCAD1E7B067AB94F7852CC1 /* Pods-Be-Daangn-iOS.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -136,8 +134,8 @@
 		BD1BB71D2653D86300855013 /* Saved */ = {
 			isa = PBXGroup;
 			children = (
-				BD30C85E2656170000099C02 /* SavedStoryboard.storyboard */,
 				BD30C8602656171200099C02 /* SavedViewController.swift */,
+				BD30C85E2656170000099C02 /* SavedStoryboard.storyboard */,
 				BD30C86226561BED00099C02 /* Cell */,
 			);
 			path = Saved;
@@ -158,7 +156,7 @@
 				BD5B3510264FA67B006BA829 /* Be-Daangn-iOS */,
 				BD5B350F264FA67B006BA829 /* Products */,
 				8594E437613548A1BAF990D1 /* Pods */,
-				25D4F1C2AF4C421EA1226966 /* Frameworks */,
+				BF417EBC3F2A5657CBF0A911 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -204,7 +202,6 @@
 				BD5B352E264FA75E006BA829 /* Home */,
 				BD5B352F264FA765006BA829 /* Recommend */,
 				BD5B3530264FA775006BA829 /* News */,
-				BD1BB71D2653D86300855013 /* Saved */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -229,8 +226,9 @@
 				BD5B3533264FA809006BA829 /* RecommendStoryboard.storyboard */,
 				BD5B353B264FA942006BA829 /* RecommendViewController.swift */,
 				BDA893B2264FF38500903D2C /* Cell */,
-				BDA893B9264FF58200903D2C /* Service */,
+				BDB4C7432669D91A00A10893 /* Service */,
 				BDA893B8264FF57100903D2C /* Model */,
+				BD1BB71D2653D86300855013 /* Saved */,
 			);
 			path = Recommend;
 			sourceTree = "<group>";
@@ -290,6 +288,7 @@
 				BDA893B6264FF51100903D2C /* UIView+.swift */,
 				BD9F52A526522E8E008E766E /* UIFont+.swift */,
 				BD1BB722265421BE00855013 /* UIViewController+presentAlert.swift */,
+				BDB4C7462669E3ED00A10893 /* CALayer + Shadow.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -340,13 +339,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		BDA893B9264FF58200903D2C /* Service */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
 		BDA893BA264FF59000903D2C /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -366,6 +358,7 @@
 		BDA893BC264FF5AE00903D2C /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				1585FBE82668D57D00C9858D /* GetNewsListService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -378,6 +371,22 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		BDB4C7432669D91A00A10893 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BDB4C7412669D91500A10893 /* RecommendDataService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BF417EBC3F2A5657CBF0A911 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52ADD4ECFCED3AA785669107 /* Pods_Be_Daangn_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -385,11 +394,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD5B3522264FA67C006BA829 /* Build configuration list for PBXNativeTarget "Be-Daangn-iOS" */;
 			buildPhases = (
-				2E4EE8339E0AB85890B78E4B /* [CP] Check Pods Manifest.lock */,
+				BB352A4C97B833267047D2C7 /* [CP] Check Pods Manifest.lock */,
 				BD5B350A264FA67B006BA829 /* Sources */,
 				BD5B350B264FA67B006BA829 /* Frameworks */,
 				BD5B350C264FA67B006BA829 /* Resources */,
-				FB57A587F93ED2D47EABB673 /* [CP] Embed Pods Frameworks */,
+				0641B651B42BB69C7A87B1D7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -454,7 +463,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2E4EE8339E0AB85890B78E4B /* [CP] Check Pods Manifest.lock */ = {
+		0641B651B42BB69C7A87B1D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Be-Daangn-iOS/Pods-Be-Daangn-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Be-Daangn-iOS/Pods-Be-Daangn-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Be-Daangn-iOS/Pods-Be-Daangn-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB352A4C97B833267047D2C7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -476,23 +502,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FB57A587F93ED2D47EABB673 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Be-Daangn-iOS/Pods-Be-Daangn-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Be-Daangn-iOS/Pods-Be-Daangn-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Be-Daangn-iOS/Pods-Be-Daangn-iOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -502,6 +511,7 @@
 			files = (
 				BD5EF443265294C50025555C /* CornerButton.swift in Sources */,
 				BD9F52A626522E8E008E766E /* UIFont+.swift in Sources */,
+				BDB4C7422669D91500A10893 /* RecommendDataService.swift in Sources */,
 				BD30C8612656171200099C02 /* SavedViewController.swift in Sources */,
 				BD30C86926561C5A00099C02 /* SavedItemCVC.swift in Sources */,
 				BDA893B7264FF51100903D2C /* UIView+.swift in Sources */,
@@ -530,6 +540,8 @@
 				BD5B3542264FACD5006BA829 /* Constants.swift in Sources */,
 				BD5B353A264FA935006BA829 /* HomeViewController.swift in Sources */,
 				15DC4D482652BCCC00A33E53 /* NewsTableViewCell.swift in Sources */,
+				1585FBE92668D57D00C9858D /* GetNewsListService.swift in Sources */,
+				BDB4C7472669E3ED00A10893 /* CALayer + Shadow.swift in Sources */,
 				BD5EF44826529CE00025555C /* RecommendStoreCVC.swift in Sources */,
 				BD5B353C264FA942006BA829 /* RecommendViewController.swift in Sources */,
 			);
@@ -667,7 +679,7 @@
 		};
 		BD5B3523264FA67C006BA829 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44BE3F4189A27CC035D11C9F /* Pods-Be-Daangn-iOS.debug.xcconfig */;
+			baseConfigurationReference = 9D45BD33D9B0E62F2841EB32 /* Pods-Be-Daangn-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -688,7 +700,7 @@
 		};
 		BD5B3524264FA67C006BA829 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68B9411942642D2C77ED13EA /* Pods-Be-Daangn-iOS.release.xcconfig */;
+			baseConfigurationReference = 1BCAD1E7B067AB94F7852CC1 /* Pods-Be-Daangn-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
