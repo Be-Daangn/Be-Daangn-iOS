@@ -27,8 +27,7 @@ class HomeViewController: BaseViewController {
         homeTableView.dataSource = self
         homeTableView.separatorStyle = .none
         self.view.sendSubviewToBack(searchView) //뷰끼리 우선순위 조정
-        self.view.sendSubviewToBack(homeTableView)
-        // code
+        self.view.sendSubviewToBack(homeTableView)       // code
     }
     
     //MARK: 데이터 설정 함수
@@ -43,10 +42,12 @@ class HomeViewController: BaseViewController {
     }
 
     func setNewsData(){
-        newsModel.append(contentsOf: [newsDataModel(Newsimage: "news1",
-                                                    name: "아인플라워오픈행사",
-                                                    subname: "아인플라워",
-                                                    location: "한남동"), newsDataModel(Newsimage: "news2", name: "인테리어상담서비스", subname: "제일인테리어", location: "한남동"), newsDataModel(Newsimage: "news3", name: "시즌 디저트 개시", subname: "아워즈카페", location: "한남동") ])
+//        newsModel.append(contentsOf: [newsDataModel(Newsimage: "news1",
+//                                                    name: "아인플라워오픈행사",
+//                                                    subname: "아인플라워",
+//                                                    location: "한남동"), newsDataModel(Newsimage: "news2", name: "인테리어상담서비스", subname: "제일인테리어", location: "한남동"), newsDataModel(Newsimage: "news3", name: "시즌 디저트 개시", subname: "아워즈카페", location: "한남동") ])
+       
+        
     }
     func setRecommend(){
         recommendModel.append(contentsOf: [recommendDataModel(recommendImage: "home2_recommend",
@@ -71,8 +72,6 @@ class HomeViewController: BaseViewController {
         print("버튼클릭")
         guard let searchVC = storyboard?.instantiateViewController(identifier: "SearchViewController")
                 as? SearchViewController else {return}
-        print(self.navigationController)
-//        self.present(searchVC, animated: true, completion: nil)
         self.navigationController?.pushViewController(searchVC, animated: true)
     }
     
@@ -143,13 +142,16 @@ extension HomeViewController : UITableViewDataSource, UITableViewDelegate{
         guard let RefreshCell = tableView.dequeueReusableCell(withIdentifier: RefreshTableViewCell.identifier) as? RefreshTableViewCell else {return UITableViewCell() }
         setRecommend()
         setSmallSectionData()
-        setNewsData()
         setSectionData()
         SectionCell.setData(name: sectionModel[indexPath.row].name)
-        NewsCell.setData(icon: newsModel[indexPath.row].Newsimage, name: newsModel[indexPath.row].name, subname: newsModel[indexPath.row].subname, location: newsModel[indexPath.row].location)
         SmallSectionCell.setData(name: smallSectionModel[indexPath.row].name)
         RecommendCell.setData(icon: recommendModel[indexPath.row].recommendImage, name: recommendModel[indexPath.row].name, location: recommendModel[indexPath.row].location, subject: recommendModel[indexPath.row].subject, review: recommendModel[indexPath.row].review, custom: recommendModel[indexPath.row].custom)
         RecommendCell.setLabel()
+       
+        
+        
+        
+        
         if indexPath.row == 0{
             return RefreshCell
         }
@@ -160,12 +162,15 @@ extension HomeViewController : UITableViewDataSource, UITableViewDelegate{
             return SectionCell
         }
         if indexPath.row == 3{
+            NewsCell.setNetworkData(n: 0)
             return NewsCell
         }
         if indexPath.row == 4{
+            NewsCell.setNetworkData(n: 1)
             return NewsCell
         }
         if indexPath.row == 5{
+            NewsCell.setNetworkData(n: 2)
             return NewsCell
         }
         if indexPath.row == 6{

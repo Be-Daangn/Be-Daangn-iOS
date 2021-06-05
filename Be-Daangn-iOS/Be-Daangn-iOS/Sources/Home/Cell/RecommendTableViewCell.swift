@@ -40,6 +40,7 @@ class RecommendTableViewCell: UITableViewCell {
     func setLabel(){
         print("함수 실행")
         self.subjectLabel.numberOfLines = 2
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
