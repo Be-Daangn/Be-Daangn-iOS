@@ -255,8 +255,13 @@
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qNG-MA-oQk">
                                                             <rect key="frame" x="41" y="34" width="283" height="283"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HG2-bR-IVL">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HG2-bR-IVL">
                                                                     <rect key="frame" x="0.0" y="0.0" width="283" height="283"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                            <real key="value" value="20"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
                                                                 </imageView>
                                                             </subviews>
                                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -313,6 +318,7 @@
                                                 </tableViewCellContentView>
                                                 <connections>
                                                     <outlet property="newsAddressLabel" destination="o4V-px-b6Q" id="nAQ-O1-aC5"/>
+                                                    <outlet property="newsContainerView" destination="qNG-MA-oQk" id="1da-QQ-Sf1"/>
                                                     <outlet property="newsDetailLabel" destination="8Fi-71-3HI" id="x6D-Lj-fRf"/>
                                                     <outlet property="newsImageView" destination="HG2-bR-IVL" id="jl5-in-Oxe"/>
                                                     <outlet property="newsTitleLabel" destination="3c9-E3-EJX" id="2WC-1L-ScF"/>
