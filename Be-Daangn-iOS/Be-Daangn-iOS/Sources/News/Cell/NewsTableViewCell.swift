@@ -12,6 +12,7 @@ class NewsTableViewCell: UITableViewCell {
     
     static let identifier : String = "NewsTableViewCell"
     
+    @IBOutlet weak var newsContainerView: UIView!
     @IBOutlet weak var newsImageView: UIImageView!
     @IBOutlet weak var newsTitleLabel: UILabel!
     
@@ -28,6 +29,12 @@ class NewsTableViewCell: UITableViewCell {
         newsTitleLabel.font = UIFont.NotoSans(.bold, size: 20)
         newsAddressLabel.font = UIFont.NotoSans(.extraBold, size: 12)
         newsDetailLabel.font = UIFont.NotoSans(.medium, size: 14)
+        
+        newsContainerView.layer.shadowColor = UIColor.black.cgColor
+        newsContainerView.layer.shadowOffset = CGSize(width: 0, height: 4)
+        newsContainerView.layer.shadowRadius = 4
+        newsContainerView.layer.shadowOpacity = 0.25
+        newsContainerView.layer.cornerRadius = 20
         
     }
 
