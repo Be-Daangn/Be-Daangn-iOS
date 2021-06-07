@@ -182,12 +182,10 @@ extension HomeViewController : UITableViewDataSource, UITableViewDelegate{
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
 
            if scrollView.contentOffset.y > 0 {
-            print("되냐?")
                if scrollView.contentOffset.y < 2000 {
                 searchViewConstraint.constant = -scrollView.contentOffset.y-20
                } else {
                 searchViewConstraint.constant = -100
-                print("-100")
                }
            }
         else{

@@ -34,14 +34,12 @@ class MainNewsTableViewCell: UITableViewCell {
         newsImage.layer.cornerRadius = 20
     }
     func setNetworkData(n : Int){
-        print("실행은됨 ㅋ")
         setRound()
         GetHomeDataService.shared.getHomeInfo { (response) in
                     switch(response)
                     {
                     
                     case .success(let newsData):
-                        print("newsData", newsData, type(of: newsData))
                         
                         if let data = newsData as? [HomeDataModel] {
                             
@@ -53,7 +51,6 @@ class MainNewsTableViewCell: UITableViewCell {
                             self.subNameLable.text = data[n].title
                             self.locationLabel.text = data[n].place
                             self.newsImage.image = UIImage(contentsOfFile: data[n].image)
-                            print("몇번째냐?",n)
                         }
                     case .requestErr(let message) :
                         print("requestERR",message)

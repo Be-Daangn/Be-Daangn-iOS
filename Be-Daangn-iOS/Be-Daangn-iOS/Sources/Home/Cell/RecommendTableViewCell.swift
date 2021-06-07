@@ -44,8 +44,6 @@ class RecommendTableViewCell: UITableViewCell {
                     {
                     
                     case .success(let newsData):
-                        print("newsData", newsData, type(of: newsData))
-                        
                         if let data = newsData as? [HomeDataModel] {
                             var infoText : String = data[2].info
                             //url에 정확한 이미지 url 주소를 넣는다.
@@ -73,13 +71,11 @@ class RecommendTableViewCell: UITableViewCell {
     
     func setRecommendNetworkData(){
         setRound()
-        print("호잇22")
         GetRecommendDataService.sharedRecommend.getRecommendInfo { (rcommendResponse) in
                     switch(rcommendResponse)
                     {
                     case .success(let recommendData):
-                        print("호잇", recommendData, type(of: recommendData))
-                        if let recommendData = recommendData as? [RecommendDataModel] {
+                        if let recommendData = recommendData as? [HomeRecommendDataModel] {
                             self.customLabel.text = "후기 " + String(recommendData[0].review)
                             self.reviewLabel.text = "단골 " + String(recommendData[0].customer)
                         }
@@ -98,7 +94,6 @@ class RecommendTableViewCell: UITableViewCell {
     
     
     func setLabel(){
-        print("함수 실행")
         self.subjectLabel.numberOfLines = 2
         
     }

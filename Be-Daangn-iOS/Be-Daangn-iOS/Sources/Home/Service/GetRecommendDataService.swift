@@ -46,7 +46,6 @@ struct GetRecommendDataService
     }
     
     private func judgeStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
-        print("sc",statusCode)
         switch statusCode {
         
         case 200: return isValidData(data: data)
@@ -63,7 +62,6 @@ struct GetRecommendDataService
         else { return .pathErr}
         // 우선 PersonDataModel 형태로 decode(해독)을 한번 거칩니다. 실패하면 pathErr
         // 해독에 성공하면 Person data를 success에 넣어줍니다.
-        print("이거다",decodedData.data)
         return .success(decodedData.data)
 
     }

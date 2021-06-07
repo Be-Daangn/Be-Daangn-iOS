@@ -41,7 +41,6 @@ struct GetHomeDataService
     }
     
     private func judgeStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
-        print("scc", statusCode)
         switch statusCode {
         
         case 200: return isValidData(data: data)

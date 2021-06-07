@@ -13,11 +13,11 @@ struct Recommendmodel: Codable {
     let status: Int
     let success: Bool
     let message: String
-    let data: [RecommendDataModel]
+    let data: [HomeRecommendDataModel]
 }
 
 // MARK: - Datum
-struct RecommendDataModel: Codable {
+struct HomeRecommendDataModel: Codable {
     let id: String
     let titleIdx: Int
     let title: String
