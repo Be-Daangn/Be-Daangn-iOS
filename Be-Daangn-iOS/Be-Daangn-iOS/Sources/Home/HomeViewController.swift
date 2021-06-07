@@ -18,7 +18,6 @@ class HomeViewController: BaseViewController {
     var newsModel : [newsDataModel] = []
     var sectionModel : [sectionDataModel] = []
     var smallSectionModel : [smallSectionDataModel] = []
-    var recommendModel : [recommendDataModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,14 +47,6 @@ class HomeViewController: BaseViewController {
 //                                                    location: "한남동"), newsDataModel(Newsimage: "news2", name: "인테리어상담서비스", subname: "제일인테리어", location: "한남동"), newsDataModel(Newsimage: "news3", name: "시즌 디저트 개시", subname: "아워즈카페", location: "한남동") ])
        
         
-    }
-    func setRecommend(){
-        recommendModel.append(contentsOf: [recommendDataModel(recommendImage: "home2_recommend",
-                                                              name: "다운타우너",
-                                                              location: "한남동",
-                                                              subject: "안녕하세요 한남동의 수제버거 전문점인 다운타우너입니다.",
-                                                              custom: "후기 89",
-                                                              review: "단골 31")])
     }
     //MARK: 뷰 모서리 곡선화 함수
     func setRound(){
@@ -140,13 +131,10 @@ extension HomeViewController : UITableViewDataSource, UITableViewDelegate{
         guard let SmallSectionCell = tableView.dequeueReusableCell(withIdentifier: SmalllSectionTableViewCell.identifier) as? SmalllSectionTableViewCell else {return UITableViewCell() }
         guard let RecommendCell = tableView.dequeueReusableCell(withIdentifier: RecommendTableViewCell.identifier) as? RecommendTableViewCell else {return UITableViewCell() }
         guard let RefreshCell = tableView.dequeueReusableCell(withIdentifier: RefreshTableViewCell.identifier) as? RefreshTableViewCell else {return UITableViewCell() }
-        setRecommend()
         setSmallSectionData()
         setSectionData()
         SectionCell.setData(name: sectionModel[indexPath.row].name)
         SmallSectionCell.setData(name: smallSectionModel[indexPath.row].name)
-        RecommendCell.setData(icon: recommendModel[indexPath.row].recommendImage, name: recommendModel[indexPath.row].name, location: recommendModel[indexPath.row].location, subject: recommendModel[indexPath.row].subject, review: recommendModel[indexPath.row].review, custom: recommendModel[indexPath.row].custom)
-        RecommendCell.setLabel()
        
         
         
@@ -180,6 +168,8 @@ extension HomeViewController : UITableViewDataSource, UITableViewDelegate{
             return SectionCell
         }
         if indexPath.row == 8{
+            RecommendCell.setNetworkData()
+            RecommendCell.setRecommendNetworkData()
             return RecommendCell
         }
         if indexPath.row == 9{

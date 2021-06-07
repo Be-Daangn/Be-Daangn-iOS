@@ -19,14 +19,7 @@ struct sectionDataModel {
 struct smallSectionDataModel {
     var name : String
 }
-struct recommendDataModel{
-    var recommendImage : String
-    var name:String
-    var location : String
-    var subject : String
-    var custom: String
-    var review:String
-}
+
 
 
 // MARK: - Data
