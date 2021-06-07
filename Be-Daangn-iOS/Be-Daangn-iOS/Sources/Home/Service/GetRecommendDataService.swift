@@ -1,20 +1,25 @@
+//
+//  GetRecommendDataService.swift
+//  Be-Daangn-iOS
+//
+//  Created by 박익범 on 2021/06/06.
+//
+
 import Foundation
 import Alamofire
 
 
-struct GetHomeDataService
+struct GetRecommendDataService
 {
-    static let shared = GetHomeDataService()
-    
-    
-    
-    func getHomeInfo(completion : @escaping (NetworkResult<Any>) -> Void)
+    static let sharedRecommend = GetRecommendDataService()
+    func getRecommendInfo(completion : @escaping (NetworkResult<Any>) -> Void)
     {
         // completion 클로저를 @escaping closure로 정의합니다.
         
         
-        let URL = Constants.newsURL
+        let URL = Constants.recommendURL
         let header : HTTPHeaders = ["Content-Type": "application/json"]
+
         
         let dataRequest = AF.request(URL,
                                      method: .get,
@@ -41,7 +46,7 @@ struct GetHomeDataService
     }
     
     private func judgeStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
-        print("scc", statusCode)
+        print("sc",statusCode)
         switch statusCode {
         
         case 200: return isValidData(data: data)
@@ -50,17 +55,15 @@ struct GetHomeDataService
         default: return .networkFail
         }
     }
-    
-    
-    
     private func isValidData(data : Data) -> NetworkResult<Any> {
         
         let decoder = JSONDecoder()
         
-        guard let decodedData = try? decoder.decode(Datamodel.self, from: data)
+        guard let decodedData = try? decoder.decode(Recommendmodel.self, from: data)
         else { return .pathErr}
         // 우선 PersonDataModel 형태로 decode(해독)을 한번 거칩니다. 실패하면 pathErr
         // 해독에 성공하면 Person data를 success에 넣어줍니다.
+        print("이거다",decodedData.data)
         return .success(decodedData.data)
 
     }

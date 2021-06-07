@@ -261,23 +261,24 @@
                                                     <color key="textColor" red="0.69803923369999998" green="0.71372550729999995" blue="0.74901962280000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nw8-Is-6dt">
-                                                    <rect key="frame" x="50" y="261.66666666666669" width="240" height="20.666666666666686"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nw8-Is-6dt">
+                                                    <rect key="frame" x="50" y="261.66666666666669" width="240" height="60"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="240" id="0e8-Y8-dQG"/>
+                                                        <constraint firstAttribute="height" constant="60" id="jwu-4t-PSF"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="NotoSans-ExtraBold" family="Noto Sans" pointSize="15"/>
                                                     <color key="textColor" red="0.40000003579999999" green="0.40000003579999999" blue="0.40000003579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dJ-Qd-bfw">
-                                                    <rect key="frame" x="50" y="287.33333333333331" width="36" height="18"/>
+                                                    <rect key="frame" x="50" y="326.66666666666669" width="36" height="18"/>
                                                     <fontDescription key="fontDescription" name="NotoSans-ExtraBold" family="Noto Sans" pointSize="13"/>
                                                     <color key="textColor" red="0.99215686319999996" green="0.68235301969999995" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3w-KY-jVP">
-                                                    <rect key="frame" x="91" y="287.33333333333331" width="35.666666666666657" height="18"/>
+                                                    <rect key="frame" x="91" y="326.66666666666669" width="35.666666666666657" height="18"/>
                                                     <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="13"/>
                                                     <color key="textColor" red="0.57647061349999995" green="0.57647061349999995" blue="0.57647061349999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
