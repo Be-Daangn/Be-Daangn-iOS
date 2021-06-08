@@ -21,7 +21,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: scene)
         
         let homeStoryboard = UIStoryboard(name: "HomeStoryboard", bundle: nil)
-        let homeViewController = homeStoryboard.instantiateViewController(identifier: "HomeViewController")
+        let homeViewController = homeStoryboard.instantiateViewController(identifier: "HomeNavigationController")
+        
+        //   여기서 애초에 시작점을 네비가 아니라 뷰컨으로 해놨어서 네비게이션ㅁ이 무조건 nil로 빠지는거엿슴
         
         self.window?.rootViewController = homeViewController
         

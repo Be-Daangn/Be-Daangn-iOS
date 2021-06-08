@@ -7,4 +7,6 @@ target 'Be-Daangn-iOS' do
 
   # Pods for Be-Daangn-iOS
   pod 'Alamofire', '~> 5.2'
+pod 'Kingfisher', '~> 6.0'
+
 end
